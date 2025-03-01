@@ -116,6 +116,6 @@ button:hover {
 }
 
 #registration-form.show {
-    display: block; /* Show the modal when the "show" class is added */
+    display: show; /* Show the modal when the "show" class is added */
     /* Additional styling to make the modal visible */
 }
