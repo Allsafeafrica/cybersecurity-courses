@@ -109,3 +109,13 @@ button {
 button:hover {
     background: #1f6feb;
 }
+
+#registration-form {
+    display: none; /* Hide the modal by default */
+    /* Other styling for the modal */
+}
+
+#registration-form.show {
+    display: block; /* Show the modal when the "show" class is added */
+    /* Additional styling to make the modal visible */
+}
