@@ -1,0 +1,42 @@
+# **Allsafeafrica Cyber Hub** 🚀  
+### **Empowering Africa Through Cybersecurity Education & Hands-on Training**  
+
+![Allsafeafrica Cyber Hub](https://allsafeafrica.github.io/cybersecurity-courses/assets/banner.png)  
+
+## 🌍 **About Us**  
+Allsafeafrica Cyber Hub is a leading cybersecurity training platform dedicated to equipping individuals and organizations with hands-on **cybersecurity skills**. Our goal is to **empower the next generation of African cybersecurity experts** through practical learning, mentorship, and industry-aligned courses.  
+
+## 🎯 **Our Training Programs**  
+We offer **hands-on, project-based** cybersecurity training in:  
+
+✅ **Cybersecurity Basics**  
+✅ **Cisco Hands-On**  
+✅ **Intranet Network Setup**  
+✅ **Apache Server Deployment**  
+✅ **Linux Mail Server Deployment**  
+✅ **HTML File Sharing System Deployment**  
+✅ **Linux Customization**  
+✅ **Introduction to Kali Linux**  
+✅ **Kali Linux Projects**  
+
+## 📌 **Why Learn With Us?**  
+✔️ Practical, real-world cybersecurity training 🔥  
+✔️ Industry-standard tools and best practices 🛠️  
+✔️ Certification upon course completion 🎓  
+✔️ Internship and mentorship opportunities 💼  
+
+## 🚀 **How to Get Started**  
+1. **Explore our courses**: [Visit Our Website](https://allsafeafrica.github.io/cybersecurity-courses/)  
+2. **Enroll in a course** and start learning today!  
+3. **Join our community** and collaborate with fellow learners.  
+
+## 📩 **Contact Us**  
+📧 **Email:** allsafeafrica@gmail.com  
+📞 **Phone:** +256776881405  
+🌐 **Website:** [Allsafeafrica Cyber Hub](https://allsafeafrica.github.io/cybersecurity-courses/)  
+
+📢 _Join us in securing Africa’s digital future!_ 🔐  
+
+---
+
+This **README.md** file provides clear information about Allsafeafrica Cyber Hub, making it easy for potential learners, contributors, and partners to understand the mission and how they can get involved. Let me know if you’d like any refinements! 🚀
