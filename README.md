@@ -1,7 +1,7 @@
 # **Allsafeafrica Cyber Hub** 🚀  
 ### **Empowering Africa Through Cybersecurity Education & Hands-on Training**  
 
-<a href="https://allsafeafrica.github.io/cybersecurity-courses">Allsafeafrica Cyber Hub"</a>
+<a href="https://allsafeafrica.github.io/cybersecurity-courses">Allsafeafrica Cyber Hub</a>
 
 ## 🌍 **About Us**  
 Allsafeafrica Cyber Hub is a leading cybersecurity training platform dedicated to equipping individuals and organizations with hands-on **cybersecurity skills**. Our goal is to **empower the next generation of African cybersecurity experts** through practical learning, mentorship, and industry-aligned courses.  
