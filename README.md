@@ -36,7 +36,3 @@ We offer **hands-on, project-based** cybersecurity training in:
 🌐 **Website:** [Allsafeafrica Cyber Hub](https://allsafeafrica.github.io/cybersecurity-courses/)  
 
 📢 _Join us in securing Africa’s digital future!_ 🔐  
-
----
-
-This **README.md** file provides clear information about Allsafeafrica Cyber Hub, making it easy for potential learners, contributors, and partners to understand the mission and how they can get involved. Let me know if you’d like any refinements! 🚀
