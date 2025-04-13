@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
     buttons.forEach(button => {
         button.addEventListener("click", function () {
             // Open the enrollment page in a new tab
-            window.open("https://surveyheart.com/form/67c474e503fd501dd127b775", "_blank");
+            window.open("https://form.jotform.com/251027363941555", "_blank");
         });
     });
 });
