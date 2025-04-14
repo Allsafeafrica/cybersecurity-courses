@@ -8,102 +8,155 @@
     <script defer src="script.js"></script>
     <style>
         body {
-            margin: 0;
-            font-family: 'Montserrat', sans-serif;
-            background: linear-gradient(to bottom right, #0d1117, #1a1a1a);
-            color: #fff;
-        }
-        .navbar {
-            background-color: #0d1117;
-            padding: 15px;
-            text-align: center;
-        }
-        .navbar ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-        }
-        .navbar ul li {
-            display: inline;
-            margin-right: 20px;
-        }
-        .navbar ul li a {
-            color: #fff;
-            text-decoration: none;
-            font-size: 18px;
-            font-weight: bold;
-        }
-        .navbar ul li a:hover {
-            color: #FFD700;
-        }
-        header {
-            text-align: center;
-            padding: 2rem;
-            background-color: #1a1a1a;
-        }
-        header h1 {
-            font-size: 2.5rem;
-            color: #FFD700;
-        }
-        header p {
-            font-size: 1.2rem;
-            color: #ccc;
-        }
-        #courses {
-            padding: 2rem;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 2rem;
-        }
-        .course {
-            background-color: #1f1f1f;
-            padding: 1.5rem;
-            border-radius: 10px;
-            width: 300px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-            text-align: center;
-        }
-        .course h2 {
-            color: #FFD700;
-        }
-        .course p {
-            font-size: 14px;
-            color: #ddd;
-        }
-        .enroll-btn {
-            margin-top: 1rem;
-            padding: 0.5rem 1rem;
-            background-color: #FFD700;
-            color: #000;
-            font-weight: bold;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        .enroll-btn:hover {
-            background-color: #e6c200;
-        }
-        footer {
-            background-color: #0d1117;
-            color: #888;
-            text-align: center;
-            padding: 1rem;
-            margin-top: 2rem;
-        }
+  margin: 0;
+  font-family: 'Orbitron', sans-serif;
+  background-color: #0a0f1b;
+  color: #ffffff;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+  background-color: rgba(10, 15, 27, 0.9);
+}
+
+.navbar .logo {
+  font-size: 24px;
+  color: #29d8ff;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #29d8ff;
+}
+
+.hero {
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%), url('cyber-bg.jpg') no-repeat center center/cover;
+  color: white;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.cta-btn {
+  padding: 12px 24px;
+  background-color: #29d8ff;
+  border: none;
+  color: black;
+  font-weight: bold;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.cta-btn:hover {
+  background-color: #1e90ff;
+}
+
+.section {
+  padding: 80px 40px;
+  text-align: center;
+}
+
+.section.light {
+  background-color: #f9f9f9;
+  color: #0a0f1b;
+}
+
+.section.dark {
+  background-color: #111827;
+}
+
+.section-title {
+  font-size: 32px;
+  margin-bottom: 40px;
+  color: #29d8ff;
+}
+
+.course-grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.course-card {
+  background-color: #1e293b;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #29d8ff33;
+}
+
+.course-card h3 {
+  margin-top: 0;
+  color: #29d8ff;
+}
+
+.about-text {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+}
+
+footer {
+  padding: 20px;
+  text-align: center;
+  background-color: #0a0f1b;
+  color: #aaa;
+}
     </style>
 </head>
 <body>
+  <header class="hero">
     <nav class="navbar">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="Pagecomingsoon.html">Courses</a></li>
-            <li><a href="Pagecomingsoon.html">About Us</a></li>
-            <li><a href="Pagecomingsoon.html">Contact</a></li>
-            <li><a href="Pagecomingsoon.html">Login</a></li>
-        </ul>
+      <div class="logo">Allsafeafrica</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Pagecomingsoon.html">About</a></li>
+        <li><a href="Pagecomingsoon.html">Contact</a></li>
+        <li><a href="Pagecomingsoon.html">Login</a></li>
+      </ul>
     </nav>
-
     <header>
         <h1>Allsafeafrica Cybersecurity Training <br> Hub</h1>
         <p>Enhance Your Cyber Skills with Hands-On Practical Courses</p>
