@@ -1,131 +1,137 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #0d1117;
-    color: #ffffff;
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  font-family: 'Orbitron', sans-serif;
+  background-color: #0a0f1b;
+  color: #ffffff;
 }
 
-header {
-    background: linear-gradient(90deg, #000428, #004e92);
-    padding: 20px;
-    text-align: center;
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+  background-color: rgba(10, 15, 27, 0.9);
 }
 
-header h1 {
-    margin: 0;
-    font-size: 2em;
+.navbar .logo {
+  font-size: 24px;
+  color: #29d8ff;
+  font-weight: bold;
 }
 
-#courses {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 20px;
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #29d8ff;
+}
+
+.hero {
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%), url('cyber-bg.jpg') no-repeat center center/cover;
+  color: white;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.cta-btn {
+  padding: 12px 24px;
+  background-color: #29d8ff;
+  border: none;
+  color: black;
+  font-weight: bold;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.cta-btn:hover {
+  background-color: #1e90ff;
+}
+
+.section {
+  padding: 80px 40px;
+  text-align: center;
+}
+
+.section.light {
+  background-color: #f9f9f9;
+  color: #0a0f1b;
+}
+
+.section.dark {
+  background-color: #111827;
+}
+
+.section-title {
+  font-size: 32px;
+  margin-bottom: 40px;
+  color: #29d8ff;
+}
+
+.course-grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.course-card {
+  background-color: #1e293b;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #29d8ff33;
+}
+
+.course-card h3 {
+  margin-top: 0;
+  color: #29d8ff;
+}
+
+.about-text {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
 }
 
 footer {
-    background-color: #042049;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    position:relative;
-    bottom: 0;
-    width: 100%;
-}
-
-.course {
-    background: #161b22;
-    border: 1px solid #30363d;
-    padding: 20px;
-    margin: 15px;
-    width: 300px;
-    border-radius: 8px;
-    text-align: center;
-    transition: transform 0.3s ease;
-}
-
-.course:hover {
-    transform: scale(1.05);
-    border-color: #58a6ff;
-}
-
-.enroll-btn {
-    background: #58a6ff;
-    color: #0d1117;
-    border: none;
-    padding: 10px 20px;
-    font-size: 1em;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.enroll-btn:hover {
-    background: #1f6feb;
-}
-
-#registration-form {
-    background: #161b22;
-    border: 1px solid #30363d;
-    padding: 20px;
-    margin: 15px;
-    width: 300px;
-    height: 300px;
-}
-
-/* Modal Styling */
-.modal {
-    display:none; /* Ensures modal is hidden by default */
-    position:absolute;
-    z-index: 1;
-    left: 200;
-    top: 200;
-    width: 100%;
-    height: 150%;
-    background-color: rgba(4, 78, 107, 0.7);
-}
-
-/* Display modal when "show" class is added */
-.modal.show {
-    display:flex;
-    align-items:stretch;
-    justify-content: center;
-}
-
-.modal-content {
-    background-color: #005586;
-    padding: 50px;
-    border-radius: 8px;
-    text-align: center;
-    width: 100%;
-    height: 85%;
-    max-width: 500px;
-    position: relative;
-}
-
-.close-btn {
-    position: absolute;
-    top: 10px;
-    right: 15px;
-    font-size: 24px;
-    cursor: pointer;
-    color: #fff;
-}
-
-input, button {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border-radius: 5px;
-}
-
-button {
-    background: #58a6ff;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-
-button:hover {
-    background: #1f6feb;
+  padding: 20px;
+  text-align: center;
+  background-color: #0a0f1b;
+  color: #aaa;
 }
