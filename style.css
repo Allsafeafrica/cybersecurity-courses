@@ -35,7 +35,7 @@ body {
 }
 
 .hero {
-  background: url("/images/Cybertraining.png");
+  background: url('/images/Cybertraining.png');
   color: white;
   height: 100vh;
   display: flex;
