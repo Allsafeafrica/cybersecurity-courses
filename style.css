@@ -35,8 +35,8 @@ body {
 }
 
 .hero {
-  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%), url("/images/Cybertraining.png") no-repeat center center/cover;
-  color: white;
+  background: url('images/Cybertraining.png') no-repeat center center/cover;
+  color: rgb(81, 18, 18);
   height: 100vh;
   display: flex;
   flex-direction: column;
