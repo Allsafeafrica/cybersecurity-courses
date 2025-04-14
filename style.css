@@ -35,8 +35,13 @@ body {
 }
 
 .hero {
+<<<<<<< HEAD
   background: url('images/Cybertraining.png') no-repeat center center/cover;
   color: rgb(81, 18, 18);
+=======
+  background: url('images/Cybertraining.png');
+  color: white;
+>>>>>>> 9cde5a6b813bbd28cfb8e308f4fe12027c250c65
   height: 100vh;
   display: flex;
   flex-direction: column;
