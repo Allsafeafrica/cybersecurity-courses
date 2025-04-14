@@ -1,243 +1,229 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cybersecurity Training - Allsafeafrica</title>
-    <link rel="stylesheet" href="style.css">
-    <script defer src="script.js"></script>
-    <style>
-        body {
-  margin: 0;
-  font-family: 'Orbitron', sans-serif;
-  background-color: #0a0f1b;
-  color: #ffffff;
-}
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cybersecurity Training - Allsafeafrica</title>
+  <link rel="stylesheet" href="style.css"/>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Orbitron', sans-serif;
+      background-color: #0a0f1b;
+      color: #ffffff;
+    }
 
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  padding: 20px 40px;
-  background-color: rgba(10, 15, 27, 0.9);
-}
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      background-color: rgba(10, 15, 27, 0.95);
+    }
 
-.navbar .logo {
-  font-size: 24px;
-  color: #29d8ff;
-  font-weight: bold;
-}
+    .logo {
+      font-size: 26px;
+      font-weight: bold;
+      color: #29d8ff;
+    }
 
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 25px;
-}
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+    }
 
-.nav-links li a {
-  color: white;
-  text-decoration: none;
-  transition: color 0.3s;
-}
+    .nav-links li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
 
-.nav-links li a:hover {
-  color: #29d8ff;
-}
+    .nav-links li a:hover {
+      color: #29d8ff;
+    }
 
-.hero {
-  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%), url('cyber-bg.jpg') no-repeat center center/cover;
-  color: white;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 0 20px;
-}
+    .hero {
+      background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+      text-align: center;
+      padding: 80px 20px 40px;
+    }
 
-.hero h1 {
-  font-size: 48px;
-  margin-bottom: 10px;
-}
+    .hero h1 {
+      font-size: 42px;
+      color: #29d8ff;
+      margin-bottom: 20px;
+    }
 
-.hero p {
-  font-size: 20px;
-  margin-bottom: 30px;
-}
+    .hero p {
+      font-size: 20px;
+      color: #cbd5e1;
+    }
 
-.cta-btn {
-  padding: 12px 24px;
-  background-color: #29d8ff;
-  border: none;
-  color: black;
-  font-weight: bold;
-  border-radius: 5px;
-  text-decoration: none;
-  transition: background 0.3s ease;
-}
+    #courses {
+      padding: 60px 40px;
+      background-color: #111827;
+    }
 
-.cta-btn:hover {
-  background-color: #1e90ff;
-}
+    .course-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
 
-.section {
-  padding: 80px 40px;
-  text-align: center;
-}
+    .course {
+      background-color: #1e293b;
+      padding: 25px;
+      border-radius: 12px;
+      border: 1px solid #29d8ff33;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
 
-.section.light {
-  background-color: #f9f9f9;
-  color: #0a0f1b;
-}
+    .course:hover {
+      transform: translateY(-5px);
+    }
 
-.section.dark {
-  background-color: #111827;
-}
+    .course img {
+      width: 80px;
+      height: 80px;
+      margin-bottom: 15px;
+    }
 
-.section-title {
-  font-size: 32px;
-  margin-bottom: 40px;
-  color: #29d8ff;
-}
+    .course h2 {
+      font-size: 20px;
+      color: #29d8ff;
+      margin-bottom: 10px;
+    }
 
-.course-grid {
-  display: grid;
-  gap: 20px;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-}
+    .course p {
+      font-size: 15px;
+      color: #cbd5e1;
+      margin-bottom: 10px;
+    }
 
-.course-card {
-  background-color: #1e293b;
-  padding: 20px;
-  border-radius: 10px;
-  border: 1px solid #29d8ff33;
-}
+    .enroll-btn {
+      margin-top: 10px;
+      padding: 10px 20px;
+      background-color: #29d8ff;
+      border: none;
+      color: #0a0f1b;
+      font-weight: bold;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
 
-.course-card h3 {
-  margin-top: 0;
-  color: #29d8ff;
-}
+    .enroll-btn:hover {
+      background-color: #1e90ff;
+    }
 
-.about-text {
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-.contact-form {
-  max-width: 500px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-.contact-form input,
-.contact-form textarea {
-  padding: 12px;
-  border: none;
-  border-radius: 5px;
-}
-
-footer {
-  padding: 20px;
-  text-align: center;
-  background-color: #0a0f1b;
-  color: #aaa;
-}
-    </style>
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #0a0f1b;
+      color: #aaa;
+      font-size: 14px;
+    }
+  </style>
 </head>
 <body>
+
+  <nav class="navbar">
+    <div class="logo">Allsafeafrica</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="Pagecomingsoon.html">About</a></li>
+      <li><a href="Pagecomingsoon.html">Contact</a></li>
+      <li><a href="Pagecomingsoon.html">Login</a></li>
+    </ul>
+  </nav>
+
   <header class="hero">
-    <nav class="navbar">
-      <div class="logo">Allsafeafrica</div>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="Pagecomingsoon.html">About</a></li>
-        <li><a href="Pagecomingsoon.html">Contact</a></li>
-        <li><a href="Pagecomingsoon.html">Login</a></li>
-      </ul>
-    </nav>
-    <header>
-        <h1>Allsafeafrica Cybersecurity Training <br> Hub</h1>
-        <p>Enhance Your Cyber Skills with Hands-On Practical Courses</p>
-    </header>
+    <h1>Allsafeafrica Cybersecurity Training Hub</h1>
+    <p>Enhance Your Cyber Skills with Hands-On Practical Courses</p>
+  </header>
 
-    <section id="courses">
-        <div class="course">
-            <img src="Logo1.jpg" width="100px" height="100px">
-            <h2>Cybersecurity Basics</h2>
-            <p>Learn how to protect personal and organizational assets from cyber threats.</p>
-            <p><strong>Outcomes:</strong> Cyber threats, vulnerabilities, and attack types.</p>
-            <button class="enroll-btn">Enroll Now</button>
-        </div>
+  <section id="courses">
+    <div class="course-grid">
+      <div class="course">
+        <img src="Logo1.jpg" alt="Course Logo">
+        <h2>Cybersecurity Basics</h2>
+        <p>Protect assets from cyber threats.</p>
+        <p><strong>Outcomes:</strong> Threats, vulnerabilities, attack types.</p>
+        <button class="enroll-btn">Enroll Now</button>
+      </div>
 
-        <div class="course">
-            <img src="Logo1.jpg" width="100px" height="100px">
-            <h2>Cisco Hands-On</h2>
-            <p>Learn to configure routers, switches, VLANs, and troubleshoot networks using Cisco devices.</p>
-            <p><strong>Outcomes:</strong> Network setup, Cisco CLI mastery, troubleshooting skills.</p>
-            <button class="enroll-btn">Enroll Now</button>
-        </div>
+      <div class="course">
+        <img src="Logo1.jpg" alt="Course Logo">
+        <h2>Cisco Hands-On</h2>
+        <p>Configure routers, VLANs, and troubleshoot Cisco networks.</p>
+        <p><strong>Outcomes:</strong> CLI mastery, setup & troubleshooting.</p>
+        <button class="enroll-btn">Enroll Now</button>
+      </div>
 
-        <div class="course">
-            <img src="Logo1.jpg" width="100px" height="100px">
-            <h2>Intranet Network Setup</h2>
-            <p>Deploy and configure internal networks for secure communication and resource sharing.</p>
-            <p><strong>Outcomes:</strong> Network security, firewall setup, internal services configuration.</p>
-            <button class="enroll-btn">Enroll Now</button>
-        </div>
+      <div class="course">
+        <img src="Logo1.jpg" alt="Course Logo">
+        <h2>Intranet Network Setup</h2>
+        <p>Secure internal communication & resource sharing.</p>
+        <p><strong>Outcomes:</strong> Firewalls, internal services, configs.</p>
+        <button class="enroll-btn">Enroll Now</button>
+      </div>
 
-        <div class="course">
-            <img src="Logo1.jpg" width="100px" height="100px">
-            <h2>Apache Server Deployment</h2>
-            <p>Set up and secure Apache web servers for hosting web applications.</p>
-            <p><strong>Outcomes:</strong> Web hosting, virtual hosts, security configuration.</p>
-            <button class="enroll-btn">Enroll Now</button>
-        </div>
+      <div class="course">
+        <img src="Logo1.jpg" alt="Course Logo">
+        <h2>Apache Server Deployment</h2>
+        <p>Host secure web apps with Apache.</p>
+        <p><strong>Outcomes:</strong> Hosting, virtual hosts, server security.</p>
+        <button class="enroll-btn">Enroll Now</button>
+      </div>
 
-        <div class="course">
-            <img src="Logo1.jpg" width="100px" height="100px">
-            <h2>Linux Mail Server Deployment</h2>
-            <p>Install and manage a Linux mail server with encryption and spam protection.</p>
-            <p><strong>Outcomes:</strong> Email security, SMTP/IMAP configuration, spam filtering.</p>
-            <button class="enroll-btn">Enroll Now</button>
-        </div>
+      <div class="course">
+        <img src="Logo1.jpg" alt="Course Logo">
+        <h2>Linux Mail Server Deployment</h2>
+        <p>Setup encrypted email with spam protection.</p>
+        <p><strong>Outcomes:</strong> SMTP/IMAP, email security, filtering.</p>
+        <button class="enroll-btn">Enroll Now</button>
+      </div>
 
-        <div class="course">
-            <img src="Logo1.jpg" width="100px" height="100px">
-            <h2>HTML File Sharing System Deployment</h2>
-            <p>Create a secure file-sharing system using HTML and Linux servers.</p>
-            <p><strong>Outcomes:</strong> Web-based file sharing, access control, data security.</p>
-            <button class="enroll-btn">Enroll Now</button>
-        </div>
+      <div class="course">
+        <img src="Logo1.jpg" alt="Course Logo">
+        <h2>HTML File Sharing System</h2>
+        <p>Secure file sharing with HTML & Linux.</p>
+        <p><strong>Outcomes:</strong> Access control, web-based sharing.</p>
+        <button class="enroll-btn">Enroll Now</button>
+      </div>
 
-        <div class="course">
-            <img src="Logo1.jpg" width="100px" height="100px">
-            <h2>Linux Customization</h2>
-            <p>Optimize Linux environments by modifying configurations and enhancing performance.</p>
-            <p><strong>Outcomes:</strong> System tuning, shell scripting, Linux UI modifications.</p>
-            <button class="enroll-btn">Enroll Now</button>
-        </div>
+      <div class="course">
+        <img src="Logo1.jpg" alt="Course Logo">
+        <h2>Linux Customization</h2>
+        <p>Optimize and tailor your Linux setup.</p>
+        <p><strong>Outcomes:</strong> Shell scripting, system tuning.</p>
+        <button class="enroll-btn">Enroll Now</button>
+      </div>
 
-        <div class="course">
-            <img src="Logo1.jpg" width="100px" height="100px">
-            <h2>Introduction to Kali Linux</h2>
-            <p>Get started with Kali Linux tools for penetration testing and ethical hacking.</p>
-            <p><strong>Outcomes:</strong> Basic ethical hacking, penetration testing tools, security assessment.</p>
-            <button class="enroll-btn">Enroll Now</button>
-        </div>
+      <div class="course">
+        <img src="Logo1.jpg" alt="Course Logo">
+        <h2>Introduction to Kali Linux</h2>
+        <p>Start with tools for ethical hacking.</p>
+        <p><strong>Outcomes:</strong> Reconnaissance, scanning, tools.</p>
+        <button class="enroll-btn">Enroll Now</button>
+      </div>
 
-        <div class="course">
-            <img src="Logo1.jpg" width="100px" height="100px">
-            <h2>Kali Linux Projects</h2>
-            <p>Work on real-world penetration testing projects using Kali Linux.</p>
-            <p><strong>Outcomes:</strong> Red teaming skills, vulnerability assessment, cybersecurity defense.</p>
-            <button class="enroll-btn">Enroll Now</button>
-        </div>
-    </section>
+      <div class="course">
+        <img src="Logo1.jpg" alt="Course Logo">
+        <h2>Kali Linux Projects</h2>
+        <p>Apply red teaming in real-world tasks.</p>
+        <p><strong>Outcomes:</strong> Vulnerability assessment & defense.</p>
+        <button class="enroll-btn">Enroll Now</button>
+      </div>
+    </div>
+  </section>
 
-    <footer>
-        <p>&copy; 2025 GreenGuard by Allsafeafrica. All rights reserved.</p>
-    </footer>
+  <footer>
+    <p>&copy; 2025 GreenGuard by Allsafeafrica. All rights reserved.</p>
+  </footer>
+
 </body>
 </html>
