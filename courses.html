@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Allsafeafrica Cyber Hub</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <title>Cybersecurity Training - Allsafeafrica</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
     <style>
         body {
             margin: 0;
@@ -12,10 +13,33 @@
             background: linear-gradient(to bottom right, #0d1117, #1a1a1a);
             color: #fff;
         }
-        header {
-            background: #0d1117;
-            padding: 2rem;
+        .navbar {
+            background-color: #0d1117;
+            padding: 15px;
             text-align: center;
+        }
+        .navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        .navbar ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .navbar ul li a:hover {
+            color: #FFD700;
+        }
+        header {
+            text-align: center;
+            padding: 2rem;
+            background-color: #1a1a1a;
         }
         header h1 {
             font-size: 2.5rem;
@@ -25,106 +49,142 @@
             font-size: 1.2rem;
             color: #ccc;
         }
-        .hero {
-            text-align: center;
-            padding: 4rem 2rem;
-        }
-        .hero h2 {
-            font-size: 2rem;
-            margin-bottom: 1rem;
-        }
-        .hero a {
-            display: inline-block;
-            margin-top: 1.5rem;
-            padding: 0.75rem 1.5rem;
-            background: #FFD700;
-            color: #000;
-            font-weight: bold;
-            border-radius: 5px;
-            text-decoration: none;
-        }
-        .section {
-            padding: 3rem 2rem;
-            text-align: center;
-        }
-        .courses {
+        #courses {
+            padding: 2rem;
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            gap: 1.5rem;
+            gap: 2rem;
         }
-        .course-card {
-            background: #1f1f1f;
+        .course {
+            background-color: #1f1f1f;
             padding: 1.5rem;
-            border-radius: 8px;
-            width: 280px;
-            text-align: left;
-        }
-        .course-card h3 {
-            color: #FFD700;
-        }
-        .cta {
-            background: #FFD700;
-            padding: 2rem;
+            border-radius: 10px;
+            width: 300px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
             text-align: center;
-            color: #000;
         }
-        .cta a {
-            margin-top: 1rem;
-            display: inline-block;
-            background: #000;
+        .course h2 {
             color: #FFD700;
-            padding: 0.75rem 1.5rem;
-            text-decoration: none;
+        }
+        .course p {
+            font-size: 14px;
+            color: #ddd;
+        }
+        .enroll-btn {
+            margin-top: 1rem;
+            padding: 0.5rem 1rem;
+            background-color: #FFD700;
+            color: #000;
             font-weight: bold;
+            border: none;
             border-radius: 5px;
+            cursor: pointer;
+        }
+        .enroll-btn:hover {
+            background-color: #e6c200;
         }
         footer {
+            background-color: #0d1117;
+            color: #888;
             text-align: center;
             padding: 1rem;
-            font-size: 0.9rem;
-            color: #888;
+            margin-top: 2rem;
         }
     </style>
 </head>
 <body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Pagecomingsoon.html">Courses</a></li>
+            <li><a href="Pagecomingsoon.html">About Us</a></li>
+            <li><a href="Pagecomingsoon.html">Contact</a></li>
+            <li><a href="Pagecomingsoon.html">Login</a></li>
+        </ul>
+    </nav>
+
     <header>
-        <h1>Allsafeafrica Cybersecurity Hub</h1>
-        <p>Empowering Africa’s Next Generation of Cyber Defenders</p>
+        <h1>Allsafeafrica Cybersecurity Training <br> Hub</h1>
+        <p>Enhance Your Cyber Skills with Hands-On Practical Courses</p>
     </header>
 
-    <section class="hero">
-        <h2>Learn. Defend. Lead.</h2>
-        <p>Join hands-on cybersecurity training built for Africa’s future innovators.</p>
-        <a href="https://allsafeafrica.github.io/cybersecurity-courses/">Explore Courses</a>
-    </section>
+    <section id="courses">
+        <div class="course">
+            <img src="Logo1.jpg" width="100px" height="100px">
+            <h2>Cybersecurity Basics</h2>
+            <p>Learn how to protect personal and organizational assets from cyber threats.</p>
+            <p><strong>Outcomes:</strong> Cyber threats, vulnerabilities, and attack types.</p>
+            <button class="enroll-btn">Enroll Now</button>
+        </div>
 
-    <section class="section">
-        <h2>Popular Courses</h2>
-        <div class="courses">
-            <div class="course-card">
-                <h3>Linux Security Essentials</h3>
-                <p>Master core Linux hardening techniques and secure system admin skills.</p>
-            </div>
-            <div class="course-card">
-                <h3>Kali Linux Projects</h3>
-                <p>Hands-on ethical hacking challenges using real-world scenarios.</p>
-            </div>
-            <div class="course-card">
-                <h3>Automotive Cybersecurity</h3>
-                <p>Secure vehicle tracking systems and dive into smart mobility tech.</p>
-            </div>
+        <div class="course">
+            <img src="Logo1.jpg" width="100px" height="100px">
+            <h2>Cisco Hands-On</h2>
+            <p>Learn to configure routers, switches, VLANs, and troubleshoot networks using Cisco devices.</p>
+            <p><strong>Outcomes:</strong> Network setup, Cisco CLI mastery, troubleshooting skills.</p>
+            <button class="enroll-btn">Enroll Now</button>
+        </div>
+
+        <div class="course">
+            <img src="Logo1.jpg" width="100px" height="100px">
+            <h2>Intranet Network Setup</h2>
+            <p>Deploy and configure internal networks for secure communication and resource sharing.</p>
+            <p><strong>Outcomes:</strong> Network security, firewall setup, internal services configuration.</p>
+            <button class="enroll-btn">Enroll Now</button>
+        </div>
+
+        <div class="course">
+            <img src="Logo1.jpg" width="100px" height="100px">
+            <h2>Apache Server Deployment</h2>
+            <p>Set up and secure Apache web servers for hosting web applications.</p>
+            <p><strong>Outcomes:</strong> Web hosting, virtual hosts, security configuration.</p>
+            <button class="enroll-btn">Enroll Now</button>
+        </div>
+
+        <div class="course">
+            <img src="Logo1.jpg" width="100px" height="100px">
+            <h2>Linux Mail Server Deployment</h2>
+            <p>Install and manage a Linux mail server with encryption and spam protection.</p>
+            <p><strong>Outcomes:</strong> Email security, SMTP/IMAP configuration, spam filtering.</p>
+            <button class="enroll-btn">Enroll Now</button>
+        </div>
+
+        <div class="course">
+            <img src="Logo1.jpg" width="100px" height="100px">
+            <h2>HTML File Sharing System Deployment</h2>
+            <p>Create a secure file-sharing system using HTML and Linux servers.</p>
+            <p><strong>Outcomes:</strong> Web-based file sharing, access control, data security.</p>
+            <button class="enroll-btn">Enroll Now</button>
+        </div>
+
+        <div class="course">
+            <img src="Logo1.jpg" width="100px" height="100px">
+            <h2>Linux Customization</h2>
+            <p>Optimize Linux environments by modifying configurations and enhancing performance.</p>
+            <p><strong>Outcomes:</strong> System tuning, shell scripting, Linux UI modifications.</p>
+            <button class="enroll-btn">Enroll Now</button>
+        </div>
+
+        <div class="course">
+            <img src="Logo1.jpg" width="100px" height="100px">
+            <h2>Introduction to Kali Linux</h2>
+            <p>Get started with Kali Linux tools for penetration testing and ethical hacking.</p>
+            <p><strong>Outcomes:</strong> Basic ethical hacking, penetration testing tools, security assessment.</p>
+            <button class="enroll-btn">Enroll Now</button>
+        </div>
+
+        <div class="course">
+            <img src="Logo1.jpg" width="100px" height="100px">
+            <h2>Kali Linux Projects</h2>
+            <p>Work on real-world penetration testing projects using Kali Linux.</p>
+            <p><strong>Outcomes:</strong> Red teaming skills, vulnerability assessment, cybersecurity defense.</p>
+            <button class="enroll-btn">Enroll Now</button>
         </div>
     </section>
 
-    <section class="cta">
-        <h2>Be Part of Our Cyber Revolution</h2>
-        <p>Register for upcoming courses, join our community, and become a certified cyber defender.</p>
-        <a href="https://forms.gle/your-registration-form">Register Now</a>
-    </section>
-
     <footer>
-        &copy; 2025 Allsafeafrica Cybersecurity Hub. All rights reserved.
+        <p>&copy; 2025 GreenGuard by Allsafeafrica. All rights reserved.</p>
     </footer>
 </body>
 </html>
