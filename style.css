@@ -35,25 +35,20 @@ body {
 }
 
 .hero {
-  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%), url('cyber-bg.jpg') no-repeat center center/cover;
-  color: white;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  background: url('/mnt/data/image.png') no-repeat center center/cover;
+  padding: 100px 20px;
   text-align: center;
-  padding: 0 20px;
+  color: #fff;
+  position: relative;
+  z-index: 1;
 }
 
-.hero h1 {
-  font-size: 48px;
-  margin-bottom: 10px;
-}
-
-.hero p {
-  font-size: 20px;
-  margin-bottom: 30px;
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.6); /* Optional dark overlay */
+  z-index: -1;
 }
 
 .cta-btn {
