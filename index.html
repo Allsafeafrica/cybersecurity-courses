@@ -16,7 +16,8 @@
 
     .hero {
       display: flex;
-      justify-content: flex-start;
+      flex-direction: row;
+      justify-content: space-between;
       align-items: center;
       padding: 60px 120px;
       background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
@@ -27,6 +28,8 @@
     .hero-content {
       max-width: 600px;
       text-align: left;
+      margin-left: 40px;
+      order: 2;
     }
 
     .hero h1 {
@@ -45,7 +48,8 @@
     }
 
     .hero-image {
-      margin-left: auto;
+      order: 1;
+      margin-right: 40px;
     }
     .email-signup {
       display: flex;
