@@ -16,7 +16,7 @@
 
     .hero {
       display: flex;
-      justify-content: space-between;
+      justify-content: flex-start;
       align-items: center;
       padding: 60px 120px;
       background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
@@ -26,6 +26,7 @@
 
     .hero-content {
       max-width: 600px;
+      text-align: left;
     }
 
     .hero h1 {
@@ -33,14 +34,19 @@
       margin-bottom: 20px;
       color: #ffffff;
       line-height: 1.2;
+      text-align: left;
     }
 
     .hero p {
       font-size: 20px;
       color: #cbd5e1;
       margin-bottom: 30px;
+      text-align: left;
     }
 
+    .hero-image {
+      margin-left: auto;
+    }
     .email-signup {
       display: flex;
       gap: 10px;
@@ -128,6 +134,7 @@
         justify-content: center;
       }
     }
+</style>
     .navbar {
       display: flex;
       justify-content: space-between;
@@ -193,11 +200,37 @@
       </div>
     </div>
     <div class="hero-image">
-      <img src="images/Cyberwarrior.png" alt="Cyber Security Training" class="floating-image">
+      <img src="images/Cybertraining.png" alt="Cyber Security Training" class="floating-image">
     </div>
   </section>
 
- 
+  <section class="section dark">
+    <h2 class="section-title">Featured Courses</h2>
+    <div class="course-grid">
+      <div class="course-card">
+        <h3>Ethical Hacking Fundamentals</h3>
+        <p>Learn the basics of ethical hacking and penetration testing</p>
+      </div>
+      <div class="course-card">
+        <h3>Network Security</h3>
+        <p>Master the art of securing networks and preventing breaches</p>
+      </div>
+      <div class="course-card">
+        <h3>Digital Forensics</h3>
+        <p>Investigate cyber incidents and collect digital evidence</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section dark">
+    <h2 class="section-title">Contact Us</h2>
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit" class="cta-btn">Send Message</button>
+    </form>
+  </section>
 
   <footer>
     <p>&copy; 2024 Allsafeafrica Cybersecurity Academy. All rights reserved.</p>
