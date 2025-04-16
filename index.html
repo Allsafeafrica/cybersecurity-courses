@@ -1,326 +1,63 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Allsafeafrica Cybersecurity Academy</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap" rel="stylesheet">
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Orbitron', sans-serif;
-      background-color: #0a0f1b;
-      color: #ffffff;
-    }
-
-    .hero {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-      padding: 60px 120px;
-      background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
-      position: relative;
-      overflow: hidden;
-    }
-
-    .hero-content {
-      max-width: 600px;
-      text-align: left;
-      margin-left: 0;
-      order: 1;
-    }
-
-    .hero-image {
-      order: 2;
-      margin-right: 0;
-      margin-left: 40px;
-    }
-    .email-signup {
-      display: flex;
-      gap: 10px;
-      margin-bottom: 30px;
-    }
-
-    .email-signup input {
-      flex: 1;
-      padding: 12px 20px;
-      border: none;
-      border-radius: 6px;
-      background-color: #1e293b;
-      color: #ffffff;
-      font-size: 16px;
-    }
-
-    .join-btn {
-      padding: 12px 24px;
-      background-color: #4ade80;
-      border: none;
-      border-radius: 6px;
-      color: #0a0f1b;
-      font-weight: bold;
-      cursor: pointer;
-      transition: background-color 0.3s;
-    }
-
-    .join-btn:hover {
-      background-color: #22c55e;
-    }
-
-    .features {
-      display: flex;
-      gap: 20px;
-    }
-
-    .feature {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-
-    .checkmark {
-      color: #4ade80;
-      font-weight: bold;
-    }
-
-    .hero-image {
-      position: relative;
-    }
-
-    .floating-image {
-      width: 400px;
-      height: auto;
-      animation: float 6s ease-in-out infinite;
-    }
-
-    @keyframes float {
-      0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(-20px); }
-    }
-
-    @media (max-width: 1024px) {
-      .hero {
-        padding: 40px 60px;
-      }
-      .hero h1 {
-        font-size: 36px;
-      }
-      .floating-image {
-        width: 300px;
-      }
-    }
-
-    @media (max-width: 768px) {
-      .hero {
-        flex-direction: column;
-        text-align: center;
-        padding: 40px 20px;
-      }
-      .hero-content {
-        margin-bottom: 40px;
-      }
-      .features {
-        justify-content: center;
-      }
-    }
-    .navbar {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 20px 40px;
-      background-color: rgba(10, 15, 27, 0.95);
-      position: relative;
-    }
-
-    @media (max-width: 768px) {
-      .navbar {
-        padding: 15px 20px;
-        flex-direction: column;
-        align-items: flex-start;
-      }
-
-      .nav-links {
-        display: none;
-        width: 100%;
-        flex-direction: column;
-        gap: 15px;
-        padding: 20px 0;
-      }
-
-      .nav-links.active {
-        display: flex;
-      }
-
-      .hero {
-        padding: 40px 20px;
-        text-align: center;
-      }
-
-      .hero-content {
-        margin: 0 auto;
-        order: 2;
-      }
-
-      .hero-image {
-        order: 1;
-        margin: 0 0 30px 0;
-      }
-
-      .floating-image {
-        width: 250px;
-      }
-
-      .email-signup {
-        flex-direction: column;
-      }
-
-      .email-signup input,
-      .join-btn {
-        width: 100%;
-      }
-
-      .features {
-        flex-direction: column;
-        align-items: center;
-        gap: 15px;
-      }
-
-      .course-grid {
-        grid-template-columns: 1fr;
-        gap: 20px;
-        padding: 0 20px;
-      }
-
-      .contact-form {
-        padding: 0 20px;
-      }
-
-      .contact-form input,
-      .contact-form textarea {
-        width: 100%;
-      }
-    }
-
-    @media (max-width: 480px) {
-      .hero h1 {
-        font-size: 28px;
-      }
-
-      .hero p {
-        font-size: 16px;
-      }
-
-      .floating-image {
-        width: 200px;
-      }
-    }
-    .logo {
-      font-size: 26px;
-      font-weight: bold;
-      color: #29d8ff;
-      display: flex;
-      align-items: center;
-    }
-
-    .nav-links {
-      list-style: none;
-      display: flex;
-      gap: 25px;
-    }
-
-    .nav-links li a {
-      color: white;
-      text-decoration: none;
-      font-weight: 500;
-      transition: color 0.3s;
-    }
-
-    .nav-links li a:hover {
-      color: #29d8ff;
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Allsafeafrica Cyber Hub</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
-  <nav class="navbar">
-    <div class="logo"><img src="images/Logo2.jpg" alt="Allsafeafrica Logo" style="width: 40px; margin-right: 10px;">Allsafeafrica</div>
-    <button class="mobile-menu-btn" onclick="toggleMenu()" style="display: none; background: none; border: none; color: white; font-size: 24px; cursor: pointer;">☰</button>
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="courses.html">Courses</a></li>
-      <li><a href="Pagecomingsoon.html">About</a></li>
-      <li><a href="Pagecomingsoon.html">Contact</a></li>
-    </ul>
-  </nav>
+  <header class="hero">
+    <nav class="navbar">
+      <div class="logo">Allsafeafrica</div>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="Pagecomingsoon.html">About</a></li>
+        <li><a href="Pagecomingsoon.html">Contact</a></li>
+        <li><a href="Pagecomingsoon.html">Login</a></li>
+      </ul>
+    </nav>
+    <section class="hero">
+      <h1>Allsafeafrica Cybersecurity Hub</h1>
+      <p>Master cybersecurity skills with hands-on, practical training</p>
+      <a href="courses.html" class="btn">Explore Courses</a>
+    </section>    
+  </header>
 
-  <section class="hero">
-    <div class="hero-content">
-      <h1>Anyone can learn cyber security with Allsafeafrica</h1>
-      <p>Hands-on cyber security training through real-world scenarios</p>
-      <div class="email-signup">
-        <input type="email" placeholder="Enter your email" required>
-        <button type="submit" class="join-btn">Join for FREE</button>
-      </div>
-      <div class="features">
-        <div class="feature">
-          <span class="checkmark">✓</span>
-          <span>Beginner Friendly</span>
-        </div>
-        <div class="feature">
-          <span class="checkmark">✓</span>
-          <span>Guides and Challenges</span>
-        </div>
-      </div>
-    </div>
-    <div class="hero-image">
-      <img src="images/TrnspWarrior.png" alt="Cyber Security Training" class="floating-image">
-    </div>
-  </section>
-
-  <section class="section dark">
-    <h2 class="section-title">Featured Courses</h2>
+  <section id="courses" class="section dark">
+    <h2 class="section-title">Our Courses</h2>
     <div class="course-grid">
       <div class="course-card">
-        <h3>Ethical Hacking Fundamentals</h3>
-        <p>Learn the basics of ethical hacking and penetration testing</p>
+        <h3>Cybersecurity Basics</h3>
+        <p>Understand threats, vulnerabilities, and defenses.</p>
       </div>
       <div class="course-card">
-        <h3>Network Security</h3>
-        <p>Master the art of securing networks and preventing breaches</p>
+        <h3>Cisco Hands-On</h3>
+        <p>Configure networks using real Cisco tools.</p>
       </div>
       <div class="course-card">
-        <h3>Digital Forensics</h3>
-        <p>Investigate cyber incidents and collect digital evidence</p>
+        <h3>Linux Customization</h3>
+        <p>Modify and optimize your Linux OS.</p>
       </div>
+      <div class="course-card">
+        <h3>Kali Linux Projects</h3>
+        <p>Real penetration testing projects with Kali.</p>
+      </div>
+      <!-- Add more cards as needed -->
     </div>
   </section>
 
-  <section class="section dark">
-    <h2 class="section-title">Contact Us</h2>
-    <form class="contact-form">
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Your Email" required>
-      <textarea placeholder="Your Message" rows="5" required></textarea>
-      <button type="submit" class="cta-btn">Send Message</button>
-    </form>
+  <section id="about" class="section light">
+    <h2 class="section-title">About Us</h2>
+    <p class="about-text">We are a passionate team at Allsafeafrica, training the next generation of cyber defenders. Our goal is to empower Africa through accessible and impactful cybersecurity education.</p>
   </section>
 
   <footer>
-    <p>&copy; 2024 Allsafeafrica Cybersecurity Academy. All rights reserved.</p>
+    <p>&copy; 2025 Allsafeafrica. Powered by GreenGuard.</p>
   </footer>
 </body>
 </html>
-
-<script>
-function toggleMenu() {
-  const navLinks = document.querySelector('.nav-links');
-  navLinks.classList.toggle('active');
-}
-
-window.addEventListener('resize', () => {
-  const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
-  mobileMenuBtn.style.display = window.innerWidth <= 768 ? 'block' : 'none';
-});
-
-window.dispatchEvent(new Event('resize'));
-</script>
