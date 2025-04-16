@@ -130,6 +130,7 @@
       align-items: center;
       padding: 20px 40px;
       background-color: rgba(10, 15, 27, 0.95);
+      position: relative;
     }
 
     .logo {
@@ -156,11 +157,109 @@
     .nav-links li a:hover {
       color: #29d8ff;
     }
+
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+    }
+
+    .hamburger span {
+      width: 25px;
+      height: 3px;
+      background-color: white;
+      transition: 0.3s;
+    }
+
+    @media (max-width: 768px) {
+      .navbar {
+        padding: 15px 20px;
+      }
+      
+      .hamburger {
+        display: flex;
+        z-index: 100;
+      }
+      
+      .nav-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        background-color: rgba(10, 15, 27, 0.95);
+        padding: 20px;
+        gap: 15px;
+        text-align: center;
+      }
+      
+      .nav-links.active {
+        display: flex;
+      }
+      
+      .logo img {
+        width: 30px;
+      }
+      
+      .logo {
+        font-size: 20px;
+      }
+      
+      .hero {
+        padding: 40px 20px;
+        flex-direction: column;
+        text-align: center;
+      }
+      
+      .hero-content {
+        order: 2;
+        margin: 0;
+        max-width: 100%;
+      }
+      
+      .hero-image {
+        order: 1;
+        margin: 0 0 30px 0;
+      }
+      
+      .floating-image {
+        width: 250px;
+      }
+      
+      .email-signup {
+        flex-direction: column;
+      }
+      
+      .features {
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+      
+      .section {
+        padding: 40px 20px;
+      }
+      
+      .course-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+      
+      .contact-form {
+        width: 100%;
+      }
+    }
   </style>
 </head>
 <body>
   <nav class="navbar">
     <div class="logo"><img src="images/Logo2.jpg" alt="Allsafeafrica Logo" style="width: 40px; margin-right: 10px;">Allsafeafrica</div>
+    <div class="hamburger" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="courses.html">Courses</a></li>
@@ -224,5 +323,11 @@
   <footer>
     <p>&copy; 2024 Allsafeafrica Cybersecurity Academy. All rights reserved.</p>
   </footer>
+  <script>
+    function toggleMenu() {
+      const navLinks = document.querySelector('.nav-links');
+      navLinks.classList.toggle('active');
+    }
+  </script>
 </body>
 </html>
