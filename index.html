@@ -1,1 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Allsafeafrica Cybersecurity Academy</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Orbitron', sans-serif;
+      background-color: #0a0f1b;
+      color: #ffffff;
+    }
 
+    .hero {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 60px 120px;
+      background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-content {
+      max-width: 600px;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+      color: #ffffff;
+      line-height: 1.2;
+    }
+
+    .hero p {
+      font-size: 20px;
+      color: #cbd5e1;
+      margin-bottom: 30px;
+    }
+
+    .email-signup {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 30px;
+    }
+
+    .email-signup input {
+      flex: 1;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 6px;
+      background-color: #1e293b;
+      color: #ffffff;
+      font-size: 16px;
+    }
+
+    .join-btn {
+      padding: 12px 24px;
+      background-color: #4ade80;
+      border: none;
+      border-radius: 6px;
+      color: #0a0f1b;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .join-btn:hover {
+      background-color: #22c55e;
+    }
+
+    .features {
+      display: flex;
+      gap: 20px;
+    }
+
+    .feature {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .checkmark {
+      color: #4ade80;
+      font-weight: bold;
+    }
+
+    .hero-image {
+      position: relative;
+    }
+
+    .floating-image {
+      width: 400px;
+      height: auto;
+      animation: float 6s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-20px); }
+    }
+
+    @media (max-width: 1024px) {
+      .hero {
+        padding: 40px 60px;
+      }
+      .hero h1 {
+        font-size: 36px;
+      }
+      .floating-image {
+        width: 300px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 20px;
+      }
+      .hero-content {
+        margin-bottom: 40px;
+      }
+      .features {
+        justify-content: center;
+      }
+    }
+</style>
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      background-color: rgba(10, 15, 27, 0.95);
+    }
+
+    .logo {
+      font-size: 26px;
+      font-weight: bold;
+      color: #29d8ff;
+      display: flex;
+      align-items: center;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+    }
+
+    .nav-links li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    .nav-links li a:hover {
+      color: #29d8ff;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo"><img src="images/Logo2.jpg" alt="Allsafeafrica Logo" style="width: 40px; margin-right: 10px;">Allsafeafrica</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="courses.html">Courses</a></li>
+      <li><a href="Pagecomingsoon.html">About</a></li>
+      <li><a href="Pagecomingsoon.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Anyone can learn cyber security with Allsafeafrica</h1>
+      <p>Hands-on cyber security training through real-world scenarios</p>
+      <div class="email-signup">
+        <input type="email" placeholder="Enter your email" required>
+        <button type="submit" class="join-btn">Join for FREE</button>
+      </div>
+      <div class="features">
+        <div class="feature">
+          <span class="checkmark">✓</span>
+          <span>Beginner Friendly</span>
+        </div>
+        <div class="feature">
+          <span class="checkmark">✓</span>
+          <span>Guides and Challenges</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="images/Cybertraining.png" alt="Cyber Security Training" class="floating-image">
+    </div>
+  </section>
+
+ 
+
+  <footer>
+    <p>&copy; 2024 Allsafeafrica Cybersecurity Academy. All rights reserved.</p>
+  </footer>
+</body>
+</html>
