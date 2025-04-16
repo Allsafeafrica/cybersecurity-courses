@@ -1,63 +1,93 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Allsafeafrica Cyber Hub</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Allsafeafrica Cybersecurity Academy</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      background-color: rgba(10, 15, 27, 0.95);
+    }
+
+    .logo {
+      font-size: 26px;
+      font-weight: bold;
+      color: #29d8ff;
+      display: flex;
+      align-items: center;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+    }
+
+    .nav-links li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    .nav-links li a:hover {
+      color: #29d8ff;
+    }
+  </style>
 </head>
 <body>
-  <header class="hero">
-    <nav class="navbar">
-      <div class="logo">Allsafeafrica</div>
-      <ul class="nav-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="courses.html">Courses</a></li>
-        <li><a href="Pagecomingsoon.html">About</a></li>
-        <li><a href="Pagecomingsoon.html">Contact</a></li>
-        <li><a href="Pagecomingsoon.html">Login</a></li>
-      </ul>
-    </nav>
-    <section class="hero">
-      <h1>Allsafeafrica Cybersecurity Hub</h1>
-      <p>Master cybersecurity skills with hands-on, practical training</p>
-      <a href="courses.html" class="btn">Explore Courses</a>
-    </section>    
-  </header>
+  <nav class="navbar">
+    <div class="logo"><img src="images/Logo2.jpg" alt="Allsafeafrica Logo" style="width: 40px; margin-right: 10px;">Allsafeafrica</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="courses.html">Courses</a></li>
+      <li><a href="Pagecomingsoon.html">About</a></li>
+      <li><a href="Pagecomingsoon.html">Contact</a></li>
+    </ul>
+  </nav>
 
-  <section id="courses" class="section dark">
-    <h2 class="section-title">Our Courses</h2>
+  <section class="hero">
+    <h1>Empower Your Cybersecurity Journey</h1>
+    <p>Join Africa's leading cybersecurity training platform and become a certified defender of the digital realm</p>
+    <a href="courses.html" class="cta-btn">Explore Courses</a>
+  </section>
+
+  <section class="section dark">
+    <h2 class="section-title">Featured Courses</h2>
     <div class="course-grid">
       <div class="course-card">
-        <h3>Cybersecurity Basics</h3>
-        <p>Understand threats, vulnerabilities, and defenses.</p>
+        <h3>Ethical Hacking Fundamentals</h3>
+        <p>Learn the basics of ethical hacking and penetration testing</p>
       </div>
       <div class="course-card">
-        <h3>Cisco Hands-On</h3>
-        <p>Configure networks using real Cisco tools.</p>
+        <h3>Network Security</h3>
+        <p>Master the art of securing networks and preventing breaches</p>
       </div>
       <div class="course-card">
-        <h3>Linux Customization</h3>
-        <p>Modify and optimize your Linux OS.</p>
+        <h3>Digital Forensics</h3>
+        <p>Investigate cyber incidents and collect digital evidence</p>
       </div>
-      <div class="course-card">
-        <h3>Kali Linux Projects</h3>
-        <p>Real penetration testing projects with Kali.</p>
-      </div>
-      <!-- Add more cards as needed -->
     </div>
   </section>
 
-  <section id="about" class="section light">
-    <h2 class="section-title">About Us</h2>
-    <p class="about-text">We are a passionate team at Allsafeafrica, training the next generation of cyber defenders. Our goal is to empower Africa through accessible and impactful cybersecurity education.</p>
+  <section class="section dark">
+    <h2 class="section-title">Contact Us</h2>
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit" class="cta-btn">Send Message</button>
+    </form>
   </section>
 
   <footer>
-    <p>&copy; 2025 Allsafeafrica. Powered by GreenGuard.</p>
+    <p>&copy; 2024 Allsafeafrica Cybersecurity Academy. All rights reserved.</p>
   </footer>
 </body>
 </html>
