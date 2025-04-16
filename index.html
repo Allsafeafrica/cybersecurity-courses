@@ -163,29 +163,43 @@
       flex-direction: column;
       gap: 5px;
       cursor: pointer;
+      z-index: 100;
     }
 
     .hamburger span {
       width: 25px;
       height: 3px;
       background-color: white;
-      transition: 0.3s;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .hamburger.active span:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .hamburger.active span:nth-child(2) {
+      opacity: 0;
+    }
+
+    .hamburger.active span:nth-child(3) {
+      transform: rotate(-45deg) translate(5px, -5px);
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 25px;
     }
 
     @media (max-width: 768px) {
-      .navbar {
-        padding: 15px 20px;
-      }
-      
       .hamburger {
         display: flex;
-        z-index: 100;
       }
       
       .nav-links {
         display: none;
         position: absolute;
-        top: 100%;
+        top: 70px;
         left: 0;
         right: 0;
         flex-direction: column;
@@ -193,73 +207,65 @@
         padding: 20px;
         gap: 15px;
         text-align: center;
+        transform: translateY(-100%);
+        transition: transform 0.3s ease-in-out;
       }
       
       .nav-links.active {
         display: flex;
-      }
-      
-      .logo img {
-        width: 30px;
-      }
-      
-      .logo {
-        font-size: 20px;
-      }
-      
-      .hero {
-        padding: 40px 20px;
-        flex-direction: column;
-        text-align: center;
-      }
-      
-      .hero-content {
-        order: 2;
-        margin: 0;
-        max-width: 100%;
-      }
-      
-      .hero-image {
-        order: 1;
-        margin: 0 0 30px 0;
-      }
-      
-      .floating-image {
-        width: 250px;
-      }
-      
-      .email-signup {
-        flex-direction: column;
-      }
-      
-      .features {
-        justify-content: center;
-        flex-wrap: wrap;
-      }
-      
-      .section {
-        padding: 40px 20px;
-      }
-      
-      .course-grid {
-        grid-template-columns: 1fr;
-        gap: 20px;
-      }
-      
-      .contact-form {
-        width: 100%;
+        transform: translateY(0);
       }
     }
-  </style>
+    .logo img {
+      width: 30px;
+    }
+    .logo {
+      font-size: 20px;
+    }
+    .hero {
+      padding: 40px 20px;
+      flex-direction: column;
+      text-align: center;
+    }
+    .hero-content {
+      order: 2;
+      margin: 0;
+      max-width: 100%;
+    }
+    .hero-image {
+      order: 1;
+      margin: 0 0 30px 0;
+    }
+    .floating-image {
+      width: 250px;
+    }
+    .email-signup {
+      flex-direction: column;
+    }
+    .features {
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .section {
+      padding: 40px 20px;
+    }
+    .course-grid {
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+    .contact-form {
+      width: 100%;
+    }
+  }
+  </style
 </head>
 <body>
   <nav class="navbar">
     <div class="logo"><img src="images/Logo2.jpg" alt="Allsafeafrica Logo" style="width: 40px; margin-right: 10px;">Allsafeafrica</div>
     <div class="hamburger" onclick="toggleMenu()">
-      <span><li><a href="index.html">Home</a></li></span>
-      <span><li><a href="courses.html">Courses</a></li></span>
-      <span><li><a href="Pagecomingsoon.html">About</a></li></span>
-      <span><li><a href="Pagecomingsoon.html">Contact</a></li></span>
+      <span></span>
+      <span></span>
+      <span></span>
     </div>
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
@@ -327,7 +333,9 @@
   <script>
     function toggleMenu() {
       const navLinks = document.querySelector('.nav-links');
+      const hamburger = document.querySelector('.hamburger');
       navLinks.classList.toggle('active');
+      hamburger.classList.toggle('active');
     }
   </script>
 </body>
