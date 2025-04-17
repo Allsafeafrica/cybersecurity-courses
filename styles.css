@@ -10,7 +10,7 @@ body {
 /* Navbar Styling */
 .navbar {
     background-color: rgba(7, 41, 1, 0.58); /* Transparent background */
-    padding: 10px 20px;
+    padding: 10px 10px;
     display: flex;
     align-items: center;
     justify-content: space-between;
