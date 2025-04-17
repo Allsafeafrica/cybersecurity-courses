@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
+    <title>Allsafeafrica Cyber Hub</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -411,11 +411,11 @@
   </body>
   </html>
   <script>
-    const slider = document.getElementById('courseSlider');
     const scrollAmount = 900; // Scroll 3 cards per click
     let autoSlideInterval;
 
     function scrollSlider(direction) {
+      const slider = document.getElementById('courseSlider');
       slider.scrollBy({
         left: direction * scrollAmount,
         behavior: 'smooth'
@@ -423,6 +423,7 @@
     }
 
     function startAutoSlide() {
+      const slider = document.getElementById('courseSlider');
       autoSlideInterval = setInterval(() => {
         if (slider.scrollLeft + slider.offsetWidth >= slider.scrollWidth - 10) {
           slider.scrollTo({ left: 0, behavior: 'smooth' });
@@ -437,6 +438,7 @@
       startAutoSlide();
     }
 
+    const slider = document.getElementById('courseSlider');
     slider.addEventListener('scroll', resetAutoSlide);
     startAutoSlide();
   </script>
