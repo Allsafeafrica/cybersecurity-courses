@@ -207,6 +207,14 @@ body {
     box-shadow: 0 0 15px #aaff00;
     margin-bottom: 30px;
   }
+/* Styling for Upcoming Events */
+h2 {
+    color: white; /* Set text color to white */
+    font-size: 2rem; /* Adjust font size */
+    text-align: center; /* Center align the text */
+    margin: 20px 0; /* Add spacing above and below */
+    font-weight: bold; /* Make the text bold */
+}
 
 /* Courses Section Styling */
 .course1 {
