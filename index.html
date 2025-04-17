@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <!-- Logo Section -->
+        <div class="logo">
+            <img src="images/Logo1.jpg" alt="TryHackMe Logo">
+            <span>Allsafeafrica</span>
+        </div>
+
+        <!-- Navigation Links -->
+        <div class="nav-links">
+            <a href="Pagecomingsoon.html">Learn</a>
+            <a href="Pagecomingsoon.html">Compete</a>
+            <a href="Pagecomingsoon.html">For Education</a>
+            <a href="Pagecomingsoon.html">For Business</a>
+            <a href="Pagecomingsoon.html">Pricing</a>
+        </div>
+
+        <!-- Search and Buttons -->
+        <div class="nav-actions">
+            <input type="text" placeholder="Search">
+            <button class="login-btn">Log In</button>
+            <button class="join-btn">Join for FREE</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+          <h1>Anyone can learn cyber security with Allsafeafrica</h1>
+          <p>Hands-on cyber security training through real-world scenarios</p>
+          <div class="hero-form">
+              <input type="email" placeholder="Email">
+              <button class="join-btn">Join for FREE</button>
+          </div>
+          <div class="hero-features">
+              <span>✔ Beginner Friendly</span>
+              <span>✔ Guides and Challenges</span>
+          </div>
+      </div>
+      <div class="hero-image">
+          <img src="images/TrnspWarrior.png" alt="Hero Image">
+      </div>
+  </section>
+  <section class="course1">  
+  <div class="header1">Explore Courses</div>
+
+  <div class="slider-container">
+    <button class="nav-button nav-left" onclick="scrollSlider(-1)">❮</button>
+    <div class="slider" id="courseSlider">
+
+      <!-- 9 Cybersecurity Course Cards -->
+      <div class="card">
+        <div class="card-image" style="background-image: url('images/Cybertraining.png');"></div>
+        <div class="card-content">
+          <h3>Linux Security Essentials</h3>
+          <p>Master Linux hardening, server security, and command-line tools.</p>
+          <div class="card-button">Enroll</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-image" style="background-image: url('https://via.placeholder.com/280x150?text=Network+Setup');"></div>
+        <div class="card-content">
+          <h3>Intranet Network Setup</h3>
+          <p>Learn hands-on intranet setup and secure communication systems.</p>
+          <div class="card-button">Enroll</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-image" style="background-image: url('https://via.placeholder.com/280x150?text=Apache+Web');"></div>
+        <div class="card-content">
+          <h3>Apache Web Server Deployment</h3>
+          <p>Deploy secure and scalable Apache web servers like a pro.</p>
+          <div class="card-button">Enroll</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-image" style="background-image: url('https://via.placeholder.com/280x150?text=Mail+Server');"></div>
+        <div class="card-content">
+          <h3>Linux Mail Server Configuration</h3>
+          <p>Set up and manage secure mail servers using Postfix & Dovecot.</p>
+          <div class="card-button">Enroll</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-image" style="background-image: url('https://via.placeholder.com/280x150?text=Kali+Linux');"></div>
+        <div class="card-content">
+          <h3>Kali Linux Basics</h3>
+          <p>Kickstart your ethical hacking journey with Kali Linux tools.</p>
+          <div class="card-button">Enroll</div>
+        </div>
+      </div>
+
+    </div>
+    <button class="nav-button nav-right" onclick="scrollSlider(1)">❯</button>
+  </div>
+
+  <script>
+    const slider = document.getElementById('courseSlider');
+    const scrollAmount = 900; // Scroll 3 cards per click
+    let autoSlideInterval;
+
+    function scrollSlider(direction) {
+      slider.scrollBy({
+        left: direction * scrollAmount,
+        behavior: 'smooth'
+      });
+    }
+
+    function startAutoSlide() {
+      autoSlideInterval = setInterval(() => {
+        if (slider.scrollLeft + slider.offsetWidth >= slider.scrollWidth - 10) {
+          slider.scrollTo({ left: 0, behavior: 'smooth' });
+        } else {
+          scrollSlider(1);
+        }
+      }, 4000); // Auto slide every 4 seconds
+    }
+
+    function resetAutoSlide() {
+      clearInterval(autoSlideInterval);
+      startAutoSlide();
+    }
+
+    slider.addEventListener('scroll', resetAutoSlide);
+    startAutoSlide();
+  </script>
+ </section>
+</body>
+</html>
+<!--         <div class="card-content"> 
+ -->
+
+</body>
+</html>
