@@ -17,7 +17,7 @@ body {
     color: white;
     position: fixed; /* Keeps the navbar static on scroll */
     top: 0;
-    width: 96%;
+    width: 90%;
     z-index: 100; /* Ensures it stays above the hero section */
 }
 
