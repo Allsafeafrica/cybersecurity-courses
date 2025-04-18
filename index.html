@@ -63,25 +63,27 @@
                 function openPopup() {
                   popupOverlay.classList.remove('hide');
                   popupOverlay.classList.add('show');
+                  popupOverlay.style.display = 'flex';
                 }
               
-                function closePopup() {
+                function closePopupAndRefresh() {
                   popupOverlay.classList.remove('show');
                   popupOverlay.classList.add('hide');
               
-                  // Wait for animation to finish before hiding
+                  // Wait for animation to finish, then refresh
                   setTimeout(() => {
-                    popupOverlay.classList.remove('hide');
-                    popupOverlay.style.display = 'none';
+                    location.reload(); // Auto-refresh the page
                   }, 300);
                 }
               
+                // Close the popup and refresh if clicking outside of it
                 window.addEventListener('click', function(event) {
                   if (event.target === popupOverlay) {
-                    closePopup();
+                    closePopupAndRefresh();
                   }
                 });
               </script>
+              
               
 
           </div>
