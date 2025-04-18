@@ -557,3 +557,100 @@ h2 {
         display: flex; /* Show nav links when toggle is active */
     }
   }
+  .join-btn {
+    background-color: #c6ff00;
+    color: #000;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    padding: 12px 24px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 0 10px #aaff00;
+    transition: background 0.3s;
+  }
+
+  .join-btn:hover {
+    background-color: #d4ff3c;
+  }
+
+  .popup-overlay {
+    display: none;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+
+  .popup-content {
+    background: url('images/background-form.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 40px 50px;
+    border-radius: 16px;
+    box-shadow: 0 0 25px #aaff00;
+    max-width: 420px;
+    width: 90%;
+    color: #fff;
+    text-align: left;
+    position: relative;
+  }
+
+  .popup-content::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+    border-radius: 16px;
+  }
+
+  .popup-content * {
+    position: relative;
+    z-index: 2;
+  }
+
+  .popup-content h2 {
+    color: #c6ff00;
+    margin-bottom: 20px;
+  }
+
+  .popup-content label {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+
+  .popup-content input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #c6ff00;
+    border-radius: 8px;
+    background: #111;
+    color: #fff;
+    margin-bottom: 10px;
+  }
+
+  .popup-content button {
+    margin-top: 15px;
+    width: 100%;
+  }
+
+  .close-btn {
+    position: absolute;
+    top: 12px;
+    right: 16px;
+    background: none;
+    border: none;
+    color: #ccc;
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+  .close-btn:hover {
+    color: #fff;
+  }
