@@ -25,7 +25,53 @@
         <div class="nav-actions">
             <input type="text" placeholder="Search">
             <button class="login-btn">Log In</button>
-            <button class="join-btn">Join for FREE</button>
+            <button class="join-btn" onclick="openPopup()">Join for FREE</button>
+              <div class="popup-overlay" id="popupForm">
+                <div class="popup-content">
+                  <button class="close-btn" onclick="closePopup()">&times;</button>
+                  <h2>Register Now</h2>
+                  <form action="https://formspree.io/f/mdkervno" method="POST">
+                    <label for="name">Full Names</label>
+                    <input type="text" name="name" id="name" required placeholder="e.g. John Doe">
+            
+                    <label for="email">Email Address</label>
+                    <input type="email" name="email" id="email" required placeholder="e.g. john@example.com">
+            
+                    <label for="country">Country</label>
+                    <input type="text" name="country" id="country" required placeholder="e.g. Uganda">
+            
+                    <button type="submit" class="join-btn">Submit</button>
+                  </form>
+                </div>
+              </div>
+            
+           <script>
+            const popupOverlay = document.getElementById('popupForm');
+            const popupContent = document.getElementById('popupContent');
+
+            function openPopup() {
+              popupOverlay.classList.remove('hide');
+              popupOverlay.classList.add('show');
+              popupOverlay.style.display = 'flex';
+            }
+
+            function closePopupAndRefresh() {
+              popupOverlay.classList.remove('show');
+              popupOverlay.classList.add('hide');
+
+              // Wait for animation to finish, then refresh
+              setTimeout(() => {
+                location.reload(); // Auto-refresh the page
+              }, 300);
+            }
+
+            // Close the popup and refresh if clicking outside of it
+            window.addEventListener('click', function(event) {
+              if (event.target === popupOverlay) {
+                closePopupAndRefresh();
+              }
+            });
+          </script>
         </div>
     </nav>
 
@@ -56,36 +102,33 @@
                 </div>
               </div>
             
-              <script>
-                const popupOverlay = document.getElementById('popupForm');
-                const popupContent = document.getElementById('popupContent');
-              
-                function openPopup() {
-                  popupOverlay.classList.remove('hide');
-                  popupOverlay.classList.add('show');
-                  popupOverlay.style.display = 'flex';
-                }
-              
-                function closePopupAndRefresh() {
-                  popupOverlay.classList.remove('show');
-                  popupOverlay.classList.add('hide');
-              
-                  // Wait for animation to finish, then refresh
-                  setTimeout(() => {
-                    location.reload(); // Auto-refresh the page
-                  }, 300);
-                }
-              
-                // Close the popup and refresh if clicking outside of it
-                window.addEventListener('click', function(event) {
-                  if (event.target === popupOverlay) {
-                    closePopupAndRefresh();
-                  }
-                });
-              </script>
-              
-              
+           <script>
+            const popupOverlay = document.getElementById('popupForm');
+            const popupContent = document.getElementById('popupContent');
 
+            function openPopup() {
+              popupOverlay.classList.remove('hide');
+              popupOverlay.classList.add('show');
+              popupOverlay.style.display = 'flex';
+            }
+
+            function closePopupAndRefresh() {
+              popupOverlay.classList.remove('show');
+              popupOverlay.classList.add('hide');
+
+              // Wait for animation to finish, then refresh
+              setTimeout(() => {
+                location.reload(); // Auto-refresh the page
+              }, 300);
+            }
+
+            // Close the popup and refresh if clicking outside of it
+            window.addEventListener('click', function(event) {
+              if (event.target === popupOverlay) {
+                closePopupAndRefresh();
+              }
+            });
+          </script>
           </div>
           <div class="hero-features">
               <span>✔ Beginner Friendly</span>
