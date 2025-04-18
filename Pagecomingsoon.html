@@ -338,15 +338,15 @@
       </div>
       <div>
         <h4>Contact Us</h4>
-        <a href="mailto:info@allsafeafrica.com">info@allsafeafrica.com</a>
-        <a href="#">+256-700-000-000</a>
+        <a href="mailto:allsafeafrica@gmail.com">allsafeafrica@gmail.com</a>
+        <a href="#">+256-783167708</a>
         <a href="#">Kampala, Uganda</a>
       </div>
       <div>
         <h4>Social Links</h4>
-        <a href="#">Twitter</a>
-        <a href="#">LinkedIn</a>
-        <a href="#">GitHub</a>
+        <a href="">Google</a>
+        <a href="https://www.linkedin.com/company/allsafeafrica/">LinkedIn</a>
+        <a href="https://github.com/Allsafeafrica">GitHub</a>
       </div>
       <div>
         <h4>Courses</h4>
@@ -361,41 +361,33 @@
     </footer>
   
     <script>
-      const slider = document.getElementById('courseSlider');
-      const scrollAmount = 320;
-      let autoSlideInterval;
-  
-      function scrollSlider(direction) {
-        slider.scrollBy({
-          left: direction * scrollAmount,
-          behavior: 'smooth'
-        });
+      const popupOverlay = document.getElementById('popupForm');
+      const popupContent = document.getElementById('popupContent');
+    
+      function openPopup() {
+        popupOverlay.classList.remove('hide');
+        popupOverlay.classList.add('show');
+        popupOverlay.style.display = 'flex';
       }
-  
-      function startAutoSlide() {
-        autoSlideInterval = setInterval(() => {
-          if (slider.scrollLeft + slider.offsetWidth >= slider.scrollWidth) {
-            slider.scrollTo({ left: 0, behavior: 'smooth' });
-          } else {
-            scrollSlider(1);
-          }
-        }, 3000);
+    
+      function closePopupAndRefresh() {
+        popupOverlay.classList.remove('show');
+        popupOverlay.classList.add('hide');
+    
+        // Wait for animation to finish, then refresh
+        setTimeout(() => {
+          location.reload(); // Auto-refresh the page
+        }, 300);
       }
-  
-      function resetAutoSlide() {
-        clearInterval(autoSlideInterval);
-        startAutoSlide();
-      }
-  
-      if (slider) {
-        slider.addEventListener('scroll', resetAutoSlide);
-        startAutoSlide();
-  
-        window.addEventListener('load', () => {
-          scrollSlider(1);
-        });
-      }
+    
+      // Close the popup and refresh if clicking outside of it
+      window.addEventListener('click', function(event) {
+        if (event.target === popupOverlay) {
+          closePopupAndRefresh();
+        }
+      });
     </script>
+    
   </body>
   </html>
   <script>
