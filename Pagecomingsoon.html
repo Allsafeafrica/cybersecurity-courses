@@ -64,25 +64,27 @@
                 function openPopup() {
                   popupOverlay.classList.remove('hide');
                   popupOverlay.classList.add('show');
+                  popupOverlay.style.display = 'flex';
                 }
               
-                function closePopup() {
+                function closePopupAndRefresh() {
                   popupOverlay.classList.remove('show');
                   popupOverlay.classList.add('hide');
               
-                  // Wait for animation to finish before hiding
+                  // Wait for animation to finish, then refresh
                   setTimeout(() => {
-                    popupOverlay.classList.remove('hide');
-                    popupOverlay.style.display = 'none';
+                    location.reload(); // Auto-refresh the page
                   }, 300);
                 }
               
+                // Close the popup and refresh if clicking outside of it
                 window.addEventListener('click', function(event) {
                   if (event.target === popupOverlay) {
-                    closePopup();
+                    closePopupAndRefresh();
                   }
                 });
               </script>
+              
               
               </div>
 
@@ -296,6 +298,34 @@
           text-align: center;
         }
       }
+              /* Add these at the end of your current <style> section */
+        .popup-overlay.show {
+          display: flex;
+          animation: fadeIn 0.3s forwards;
+        }
+
+        .popup-content {
+          transform: scale(0.8);
+          opacity: 0;
+          transition: transform 0.3s ease, opacity 0.3s ease;
+        }
+
+        .popup-overlay.show .popup-content {
+          transform: scale(1);
+          opacity: 1;
+        }
+
+        /* Exit animation (using class removal and JS delay) */
+        .popup-overlay.hide .popup-content {
+          transform: scale(0.8);
+          opacity: 0;
+        }
+
+        @keyframes fadeIn {
+          from { background: rgba(0, 0, 0, 0); }
+          to   { background: rgba(0, 0, 0, 0.85); }
+        }
+
     </style>
   </head>
   <body>
