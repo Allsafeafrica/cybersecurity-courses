@@ -57,14 +57,32 @@
               </div>
             
               <script>
+                const popupOverlay = document.getElementById('popupForm');
+                const popupContent = document.getElementById('popupContent');
+              
                 function openPopup() {
-                  document.getElementById('popupForm').style.display = 'flex';
+                  popupOverlay.classList.remove('hide');
+                  popupOverlay.classList.add('show');
                 }
-            
+              
                 function closePopup() {
-                  document.getElementById('popupForm').style.display = 'none';
+                  popupOverlay.classList.remove('show');
+                  popupOverlay.classList.add('hide');
+              
+                  // Wait for animation to finish before hiding
+                  setTimeout(() => {
+                    popupOverlay.classList.remove('hide');
+                    popupOverlay.style.display = 'none';
+                  }, 300);
                 }
+              
+                window.addEventListener('click', function(event) {
+                  if (event.target === popupOverlay) {
+                    closePopup();
+                  }
+                });
               </script>
+              
 
           </div>
           <div class="hero-features">
