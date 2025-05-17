@@ -3,49 +3,163 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Coming Soon | ASA CyberSecurity</title>
+    <title>ASA Cybersecurity</title>les.css">
+    <link rel="stylesheet" href="styles.css">itle>
 </head>
 <body>
-    <body>
-        <nav class="navbar">
-            <!-- Logo Section -->
-            <div class="logo">
-                <img src="images/Logo1.jpg" alt="Allsafeafrica Logo" class="logo-image">
-                <span>Allsafeafrica Cybersecurity (ASA)</span>
-            </div>
+    <nav class="navbar">
+        <div class="logo">">
+            <img src="images/Logo1.jpg" alt="Allsafeafrica Logo">
+            <span>Allsafeafrica Cybersecurity (ASA)</span>
+        </div>  <img src="images/Logo1.jpg" alt="Allsafeafrica Logo" class="logo-image">
+        <button class="nav-toggle" aria-label="Toggle navigation">
+            ☰/div>
+        </button>
+        <div class="nav-links">ks -->
+            <a href="Pagecomingsoon.html">Learn</a>
+            <a href="Pagecomingsoon.html">Compete</a>app">Our Services</a>
+            <a href="https://allsafeafrica.netlify.app">Our Services</a>
     
-            <!-- Navigation Links -->
-            <div class="nav-links">
-              <a href="https://allsafeafrica.netlify.app">Our Services</a>
-            </div>
-    
-            <!-- Search and Buttons -->
-            <div class="nav-actions">
-                <a href="index.html"><button class="join-btn"> BACK HOME </button></a>
-            </div>
-        </nav>
-    
-        <!-- Hero Section -->
-        <section class="hero">
-          <div class="hero-content">
-            
-
-              <h1>Allsafeafrica Cybersecurity Hub</h1>
-              <p>This page is coming soon to educate and empower cyber defenders across Africa.
-
-                Stay tuned for more updates.</p>
-              <div class="hero-form">
-                  <input type="email" placeholder="Email">
-                  <button class="join-btn" onclick="openPopup()">Join for FREE</button>
+        </div>-- Search and Buttons -->
+        <div class="nav-actions">ns">
+            <button class="login-btn">Log In</button>oin-btn"> BACK HOME </button></a>
+            <button class="join-btn" onclick="openPopup()">Join for FREE</button>
               <div class="popup-overlay" id="popupForm">
                 <div class="popup-content">
-                  <button class="close-btn" onclick="closePopup()">&times;</button>
+                  <button class="close-btn" onclick="closePopupAndRefresh()">&times;</button>
                   <h2>Register Now</h2>
                   <form action="https://formspree.io/f/mdkervno" method="POST">
                     <label for="name">Full Names</label>
                     <input type="text" name="name" id="name" required placeholder="e.g. John Doe">
+              <h1>Allsafeafrica Cybersecurity Hub</h1>
+                    <label for="email">Email Address</label>ower cyber defenders across Africa.
+                    <input type="email" name="email" id="email" required placeholder="e.g. john@example.com">
+                Stay tuned for more updates.</p>
+                    <label for="country">Country</label>
+                    <input type="text" name="country" id="country" required placeholder="e.g. Uganda">
+                  <button class="join-btn" onclick="openPopup()">Join for FREE</button>
+                    <button type="submit" class="join-btn">Submit</button>
+                  </form>s="popup-content">
+                </div>ton class="close-btn" onclick="closePopup()">&times;</button>
+              </div>2>Register Now</h2>
+                  <form action="https://formspree.io/f/mdkervno" method="POST">
+           <script> <label for="name">Full Names</label>
+            const popupOverlay = document.getElementById('popupForm');placeholder="e.g. John Doe">
+            const popupContent = document.getElementById('popupContent');
+                    <label for="email">Email Address</label>
+            function openPopup() {mail" name="email" id="email" required placeholder="e.g. john@example.com">
+              popupOverlay.classList.remove('hide');
+              popupOverlay.classList.add('show');/label>
+              popupOverlay.style.display = 'flex';ry" id="country" required placeholder="e.g. Uganda">
+            }
+                    <button type="submit" class="join-btn">Submit</button>
+            function closePopupAndRefresh() {
+              popupOverlay.classList.remove('show');
+              popupOverlay.classList.add('hide');
             
+              // Wait for animation to finish, then refresh
+              setTimeout(() => {ay = document.getElementById('popupForm');
+                location.reload(); // Auto-refresh the paged('popupContent');
+              }, 300);
+            }   function openPopup() {
+                  popupOverlay.classList.remove('hide');
+            // Close the popup and refresh if clicking outside of it
+            window.addEventListener('click', function(event) {
+              if (event.target === popupOverlay) {
+                closePopupAndRefresh();
+              } function closePopupAndRefresh() {
+            });   popupOverlay.classList.remove('show');
+          </script>opupOverlay.classList.add('hide');
+        </div>
+    </nav>        // Wait for animation to finish, then refresh
+                  setTimeout(() => {
+    <!-- Hero Section -->ion.reload(); // Auto-refresh the page
+    <section class="hero">
+      <div class="hero-content">
+          <h1>Anyone can learn cyber security with Allsafeafrica</h1>
+          <p>Hands-on cyber security training through real-world scenarios</p>
+          <div class="hero-form">stener('click', function(event) {
+              <input type="email" placeholder="Email">
+              <button class="join-btn" onclick="openPopup()">Join for FREE</button>
+              <div class="popup-overlay" id="popupForm">
+                <div class="popup-content">
+                  <button class="close-btn" onclick="closePopupAndRefresh()">&times;</button>
+                  <h2>Register Now</h2>
+                  <form action="https://formspree.io/f/mdkervno" method="POST">
+                    <label for="name">Full Names</label>
+                    <input type="text" name="name" id="name" required placeholder="e.g. John Doe">
+            div>
+                    <label for="email">Email Address</label>
+                    <input type="email" name="email" id="email" required placeholder="e.g. john@example.com">
+            div>
+                    <label for="country">Country</label>
+                    <input type="text" name="country" id="country" required placeholder="e.g. Uganda">
+            YPE html>
+                    <button type="submit" class="join-btn">Submit</button>
+                  </form>
+                </div>-8">
+              </div>port" content="width=device-width, initial-scale=1">
+            ef="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+           <script>
+            const popupOverlay = document.getElementById('popupForm');
+            const popupContent = document.getElementById('popupContent');
+        padding: 0px 0px;
+            function openPopup() {ans-serif;
+              popupOverlay.classList.remove('hide');
+              popupOverlay.classList.add('show');
+              popupOverlay.style.display = 'flex';
+            }
+      .header {
+            function closePopupAndRefresh() {
+              popupOverlay.classList.remove('show');
+              popupOverlay.classList.add('hide');
+        background-color: #002fff;
+              // Wait for animation to finish, then refresh
+              setTimeout(() => {
+                location.reload(); // Auto-refresh the page
+              }, 300);0 15px #aaff00;
+            }n-bottom: 30px;
+      }
+            // Close the popup and refresh if clicking outside of it
+            window.addEventListener('click', function(event) {
+              if (event.target === popupOverlay) {
+                closePopupAndRefresh();
+              }
+            });
+          </script>
+          </div> flex;
+          <div class="hero-features">
+              <span>✔ Beginner Friendly</span>
+              <span>✔ Guides and Challenges</span>
+          </div>bottom: 20px;
+      </div>llbar-width: none;
+      <div class="hero-image">h;
+          <img src="images/TrnspWarrior.png" alt="Hero Image">
+      </div>
+  </section>r::-webkit-scrollbar {
+  <section class="course1">  
+  <div class="header1">Explore Trainings</div>
+  
+  <div class="slider-container">
+    <button class="nav-button nav-left" onclick="scrollSlider(-1)">❮</button>
+    <div class="slider" id="courseSlider">
+        width: 280px;
+      <!-- 9 Cybersecurity Course Cards -->);
+      <div class="card">d #0f0;
+        <div class="card-image" style="background-image: url('images/cybgrl.jpg');"></div>
+        <div class="card-content">0, 255, 0, 0.3);
+          <h3>Cybersecurity Basics</h3>
+          <p>Learn about how to protect your data and information from digital attacks.
+          </p>
+            <button class="join-btn" onclick="openPopup()">Enroll</button>
+              <div class="popup-overlay" id="popupForm">
+                <div class="popup-content">
+                  <button class="close-btn" onclick="closePopupAndRefresh()">&times;</button>
+                  <h2>Register Now</h2>
+                  <form action="https://formspree.io/f/mdkervno" method="POST">
+                    <label for="name">Full Names</label>
+                    <input type="text" name="name" id="name" required placeholder="e.g. John Doe">
+            ground-size: cover;
                     <label for="email">Email Address</label>
                     <input type="email" name="email" id="email" required placeholder="e.g. john@example.com">
             
@@ -54,401 +168,288 @@
             
                     <button type="submit" class="join-btn">Submit</button>
                   </form>
+                </div>px;
+              </div>8px;
+        </div> #aaff00;
+      </div>
+  
+      <div class="card">
+        <div class="card-image" style="background-image: url('images/kali.jpg');"></div>
+        <div class="card-content">
+          <h3>Kali Linux Basics</h3>
+          <p>Kickstart your ethical hacking journey with Kali Linux tools.</p>
+                      <button class="join-btn" onclick="openPopup()">Enroll</button>
+              <div class="popup-overlay" id="popupForm">
+                <div class="popup-content">
+                  <button class="close-btn" onclick="closePopupAndRefresh()">&times;</button>
+                  <h2>Register Now</h2>
+                  <form action="https://formspree.io/f/mdkervno" method="POST">
+                    <label for="name">Full Names</label>
+                    <input type="text" name="name" id="name" required placeholder="e.g. John Doe">
+            -align: center;
+                    <label for="email">Email Address</label>
+                    <input type="email" name="email" id="email" required placeholder="e.g. john@example.com">
+            
+                    <label for="country">Country</label>
+                    <input type="text" name="country" id="country" required placeholder="e.g. Uganda">
+            ground-color: #d4ff3c;
+                    <button type="submit" class="join-btn">Submit</button>
+                  </form>
+                </div>
+              </div>solute;
+        </div>0%;
+      </div>sform: translateY(-50%);
+        background-color: rgba(170, 255, 0, 0.9);
+        border: none;
+      <div class="card">
+        <div class="card-image" style="background-image: url('images/Apc.png');"></div>
+        <div class="card-content">
+          <h3>Apache Web Server Deployment</h3>
+          <p>Deploy secure and scalable Apache web servers like a pro.</p>
+                      <button class="join-btn" onclick="openPopup()">Enroll</button>
+              <div class="popup-overlay" id="popupForm">
+                <div class="popup-content">
+                  <button class="close-btn" onclick="closePopupAndRefresh()">&times;</button>
+                  <h2>Register Now</h2>
+                  <form action="https://formspree.io/f/mdkervno" method="POST">
+                    <label for="name">Full Names</label>
+                    <input type="text" name="name" id="name" required placeholder="e.g. John Doe">
+            
+                    <label for="email">Email Address</label>
+                    <input type="email" name="email" id="email" required placeholder="e.g. john@example.com">
+            t: 10px;
+                    <label for="country">Country</label>
+                    <input type="text" name="country" id="country" required placeholder="e.g. Uganda">
+            -section {
+                    <button type="submit" class="join-btn">Submit</button>
+                  </form>r;
                 </div>
               </div>
+        </div>ards {
+      </div>lay: flex;
+        flex-wrap: wrap;
+      <div class="card"> center;
+        <div class="card-image" style="background-image: url('images/intra.png');"></div>
+        <div class="card-content">
+          <h3>Intranet Network Setup</h3>
+          <p>Learn hands-on intranet setup and secure communication systems.</p>
+                      <button class="join-btn" onclick="openPopup()">Enroll</button>
+              <div class="popup-overlay" id="popupForm">
+                <div class="popup-content">
+                  <button class="close-btn" onclick="closePopupAndRefresh()">&times;</button>
+                  <h2>Register Now</h2>
+                  <form action="https://formspree.io/f/mdkervno" method="POST">
+                    <label for="name">Full Names</label>
+                    <input type="text" name="name" id="name" required placeholder="e.g. John Doe">
             
-              <script>
-                const popupOverlay = document.getElementById('popupForm');
-                const popupContent = document.getElementById('popupContent');
-              
-                function openPopup() {
-                  popupOverlay.classList.remove('hide');
-                  popupOverlay.classList.add('show');
-                  popupOverlay.style.display = 'flex';
-                }
-              
-                function closePopupAndRefresh() {
-                  popupOverlay.classList.remove('show');
-                  popupOverlay.classList.add('hide');
-              
-                  // Wait for animation to finish, then refresh
-                  setTimeout(() => {
-                    location.reload(); // Auto-refresh the page
-                  }, 300);
-                }
-              
-                // Close the popup and refresh if clicking outside of it
-                window.addEventListener('click', function(event) {
-                  if (event.target === popupOverlay) {
-                    closePopupAndRefresh();
-                  }
-                });
-              </script>
-              
-              
+                    <label for="email">Email Address</label>
+                    <input type="email" name="email" id="email" required placeholder="e.g. john@example.com">
+            ground-size: cover;
+                    <label for="country">Country</label>
+                    <input type="text" name="country" id="country" required placeholder="e.g. Uganda">
+            
+                    <button type="submit" class="join-btn">Submit</button>
+                  </form>
+                </div>
               </div>
-
-          </div>
-          <div class="hero-image">
-              <img src="images/TrnspWarrior.png" alt="Hero Image">
-          </div>
-      </section>
-
-      <!DOCTYPE html>
+        </div>
+      </div>in-top: 80px;
+        padding: 40px 20px;
+      <div class="card">e01f7;
+        <div class="card-image" style="background-image: url('images/mail.png');"></div>
+        <div class="card-content">
+          <h3>Linux Mail Server Configuration</h3>
+          <p>Set up and manage secure mail servers using Postfix & Dovecot.</p>
+                      <button class="join-btn" onclick="openPopup()">Enroll</button>
+              <div class="popup-overlay" id="popupForm">
+                <div class="popup-content">
+                  <button class="close-btn" onclick="closePopupAndRefresh()">&times;</button>
+                  <h2>Register Now</h2>
+                  <form action="https://formspree.io/f/mdkervno" method="POST">
+                    <label for="name">Full Names</label>
+                    <input type="text" name="name" id="name" required placeholder="e.g. John Doe">
+            
+                    <label for="email">Email Address</label>
+                    <input type="email" name="email" id="email" required placeholder="e.g. john@example.com">
+            r: #fff;
+                    <label for="country">Country</label>
+                    <input type="text" name="country" id="country" required placeholder="e.g. Uganda">
+             a {
+                    <button type="submit" class="join-btn">Submit</button>
+                  </form>
+                </div>n: none;
+              </div>m: 6px;
+        </div>
+      </div>
+      footer a:hover {
+        text-decoration: underline;
+      }
+    </div>
+    <button class="nav-button nav-right" onclick="scrollSlider(1)">❯</button>
+  </div>.card, .event-card {
+  <!DOCTYPE html>80%;
   <html lang="en">
-  <head>
+  <head>.nav-button {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
-    <style>
-      body {
+    <style>lex-direction: column;
+      body {xt-align: center;
         margin: 0;
         padding: 0px 0px;
-        font-family: 'Orbitron', sans-serif;
+        font-family: 'Orbitron', sans-serif;r current <style> section */
         background-color: #7db40f;
-        color: #aaff01;
-      }
-  
+        color: #aaff01;;
+      }   animation: fadeIn 0.3s forwards;
+        }
       .header {
         text-align: center;
-        font-size: 28px;
-        color: #000;
-        background-color: #002fff;
+        font-size: 28px;le(0.8);
+        color: #000;;
+        background-color: #002fff;3s ease, opacity 0.3s ease;
         padding: 15px 30px;
         display: inline-block;
-        border-radius: 12px;
+        border-radius: 12px;.popup-content {
         box-shadow: 0 0 15px #aaff00;
         margin-bottom: 30px;
-      }
+      } }
   
-      .slider-container {
-        position: relative;
-        overflow: hidden;
-      }
-  
+      .slider-container { (using class removal and JS delay) */
+        position: relative; .popup-content {
+        overflow: hidden;e(0.8);
+      }   opacity: 0;
+        }
       .slider {
-        display: flex;
-        overflow-x: auto;
-        scroll-snap-type: x mandatory;
+        display: flex;eIn {
+        overflow-x: auto;nd: rgba(0, 0, 0, 0); }
+        scroll-snap-type: x mandatory;, 0, 0.85); }
         gap: 20px;
         padding-bottom: 20px;
         scrollbar-width: none;
         scroll-behavior: smooth;
-      }
-  
+      }>
+    <section class="event-section">
       .slider::-webkit-scrollbar {
-        display: none;
-      }
-  
-      .card {
-        flex: 0 0 auto;
-        scroll-snap-align: start;
-        width: 280px;
-        background-image: url(images/bg.png);
+        display: none;t-cards">
+      } <div class="event-card">
+          <div class="card-image" style="background-image: url('images/wkshp.jpeg');"></div>
+      .card {v class="card-content">
+        flex: 0 0 auto;Coding Workshop</h3>
+        scroll-snap-align: start; secure code and avoid vulnerabilities in real-time projects.</p>
+        width: 280px;s="card-button">
+        background-image: url(images/bg.png);ding" target="_blank" style="text-decoration: none; color: inherit;">Join Now</a>
         border: 1px solid #0f0;
         border-radius: 20px;
         box-shadow: 0 0 20px rgba(0, 255, 0, 0.3);
-        overflow: hidden;
-        transition: transform 0.3s;
-      }
-  
-      .card:hover {
-        transform: scale(1.05);
+        overflow: hidden;-card">
+        transition: transform 0.3s;tyle="background-image: url('images/CTF.jpg');"></div>
+      }   <div class="card-content">
+            <h3>CTF Challenge</h3>
+      .card:hover {ete in our Capture The Flag event to test your hacking and defense skills!</p>
+        transform: scale(1.05);tton">Coming Soon</div>
         box-shadow: 0 0 30px rgba(173, 255, 47, 0.6);
-      }
-  
-      .card-image {
-        height: 150px;
-        background-size: cover;
-        background-position: center;
-      }
-  
+      } </div>
+        <div class="event-card">
+      .card-image {s="card-image" style="background-image: url('images/host.jpg');"></div>
+        height: 150px;card-content">
+        background-size: cover;anels</h3>
+        background-position: center; industry experts on the latest in cybersecurity and AI.</p>
+      }     <div class="card-button">Coming Soon</div>
+          </div>
       .card-content {
         padding: 20px;
-      }
+      }ection>
   
       .card h3 {
         margin: 0 0 10px;
-        font-size: 18px;
-        color: #aaff00;
-      }
-  
-      .card p {
-        font-size: 15px;
-        color: #ffffff;
+        font-size: 18px;>
+        color: #aaff00;a is committed to advancing cybersecurity awareness and skills across Africa through training, innovation, and community support.</p>
+      }/div>
+      <div>
+      .card p {tact Us</h4>
+        font-size: 15px;allsafeafrica@gmail.com">allsafeafrica@gmail.com</a>
+        color: rgb(255, 255, 255)fff;a>
         margin-bottom: 15px;
-      }
-  
-      .card-button {
-        display: inline-block;
-        background-color: #aaff00;
-        color: #000;
+      }div>
+        <h4>Social Links</h4>
+      .card-button {ps://g.co/kgs/UX577kU">Google</a>
+        display: inline-block;inkedin.com/company/allsafeafrica/">LinkedIn</a>
+        background-color: #aaff00;m/Allsafeafrica">GitHub</a>
+        color: #000;ps://chat.whatsapp.com/GcYCogAEnVZA7n6ilHVZ1A">Join Our WhatsApp Community</a>
         padding: 10px 16px;
         border-radius: 6px;
         font-weight: bold;
         text-align: center;
-        cursor: pointer;
-        transition: background 0.3s;
-      }
-  
+        cursor: pointer;x Security Essentials</a>
+        transition: background 0.3s;sics</a>
+      } <a href="#">Kali Linux Projects</a>
+        <a href="#" class="card-button" style="margin-top: 10px; display: inline-block; width: auto;">Explore More</a>
       .card-button:hover {
         background-color: #d4ff3c;
-      }
+      } <p>&copy; 2025 GreenGuard by Allsafeafrica. All rights reserved.</p>
   
       .nav-button {
         position: absolute;
         top: 50%;
-        transform: translateY(-50%);
-        background-color: rgba(170, 255, 0, 0.9);
+        transform: translateY(-50%);getElementById('popupForm');
+        background-color: rgba(170, 255, 0, 0.9);d('popupContent');
         border: none;
-        padding: 12px;
-        border-radius: 50%;
-        cursor: pointer;
-        box-shadow: 0 0 10px #aaff00;
+        padding: 12px;up() {
+        border-radius: 50%;ist.remove('hide');
+        cursor: pointer;ssList.add('show');
+        box-shadow: 0 0 10px #aaff00;'flex';
         z-index: 1;
       }
-  
-      .nav-button:hover {
-        background-color: #d4ff3c;
+      function closePopupAndRefresh() {
+      .nav-button:hover {sList.remove('show');
+        background-color: #d4ff3c;('hide');
       }
-  
-      .nav-left {
-        left: 10px;
+        // Wait for animation to finish, then refresh
+      .nav-left {t(() => {
+        left: 10px;reload(); // Auto-refresh the page
+      } }, 300);
       }
-  
       .nav-right {
-        right: 10px;
-      }
-  
-      .event-section {
+        right: 10px;opup and refresh if clicking outside of it
+      }indow.addEventListener('click', function(event) {
+        if (event.target === popupOverlay) {
+      .event-section {dRefresh();
         margin-top: 60px;
         text-align: center;
-      }
-  
+      }cript>
+    
       .event-cards {
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
-        gap: 20px;
-        margin-top: 30px;
+        justify-content: center;lementById('courseSlider');
+        gap: 20px;ount = 900; // Scroll 3 cards per click
+        margin-top: 30px;;
       }
-  
-      .event-card {
+    function scrollSlider(direction) {
+      .event-card {By({
         background-image: url(images/bg.png);
-        width: 280px;
+        width: 280px;ooth'
         border-radius: 15px;
         overflow: hidden;
         border: 1px solid #aaff00;
         box-shadow: 0 0 10px #aaff00;
-      }
-  
-      .event-card .card-image {
+      }utoSlideInterval = setInterval(() => {
+        if (slider.scrollLeft + slider.offsetWidth >= slider.scrollWidth - 10) {
+      .event-card .card-image {t: 0, behavior: 'smooth' });
         height: 150px;
         background-size: cover;
         background-position: center;
-      }
-  
+      }, 1000); // Auto slide every 4 seconds
+    }
       .event-card .card-content {
-        padding: 15px;
-      }
-  
+        padding: 15px;Slide() {
+      }learInterval(autoSlideInterval);
+      startAutoSlide();
       footer {
         margin-top: 80px;
-        padding: 40px 20px;
+        padding: 40px 20px;('scroll', resetAutoSlide);
         background: #091e01f7;
         color: #aaff00;
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-around;
-        text-align: left;
-      }
-  
-      footer div {
-        margin: 10px;
-        flex: 1;
-        min-width: 200px;
-      }
-  
-      footer h4 {
-        margin-bottom: 10px;
-        color: #fff;
-      }
-  
-      footer a {
-        display: block;
-        color: #aaff00;
-        text-decoration: none;
-        margin-bottom: 6px;
-      }
-  
-      footer a:hover {
-        text-decoration: underline;
-      }
-  
-      @media (max-width: 8px) {
-        .card, .event-card {
-          width: 80%;
-        }
-        .nav-button {
-          display: none;
-        }
-        footer {
-          flex-direction: column;
-          text-align: center;
-        }
-      }
-              /* Add these at the end of your current <style> section */
-        .popup-overlay.show {
-          display: flex;
-          animation: fadeIn 0.3s forwards;
-        }
-
-        .popup-content {
-          transform: scale(0.8);
-          opacity: 0;
-          transition: transform 0.3s ease, opacity 0.3s ease;
-        }
-
-        .popup-overlay.show .popup-content {
-          transform: scale(1);
-          opacity: 1;
-        }
-
-        /* Exit animation (using class removal and JS delay) */
-        .popup-overlay.hide .popup-content {
-          transform: scale(0.8);
-          opacity: 0;
-        }
-
-        @keyframes fadeIn {
-          from { background: rgba(0, 0, 0, 0); }
-          to   { background: rgba(0, 0, 0, 0.85); }
-        }
-
-    </style>
-  </head>
-  <body>
-    <section class="event-section">
-      <h2 >Upcoming Events</h2>
-      <div class="event-cards">
-        <div class="event-card">
-          <div class="card-image" style="background-image: url('images/wkshp.jpeg');"></div>
-          <div class="card-content">
-            <h3>Secure Coding Workshop</h3>
-            <p>Learn how to write secure code and avoid vulnerabilities in real-time projects.</p>
-            <div class="card-button">
-              <a href="https://lu.ma/securecoding" target="_blank" style="text-decoration: none; color: inherit;">Join Now</a>
-            </div>
-          </div>
-        </div>
-        <div class="event-card">
-          <div class="card-image" style="background-image: url('images/CTF.jpg');"></div>
-          <div class="card-content">
-            <h3>CTF Challenge</h3>
-            <p>Compete in our Capture The Flag event to test your hacking and defense skills!</p>
-            <div class="card-button">Coming Soon</div>
-          </div>
-        </div>
-        <div class="event-card">
-          <div class="card-image" style="background-image: url('images/host.jpg');"></div>
-          <div class="card-content">
-            <h3>Cyber Talks & Panels</h3>
-            <p>Join discussions with industry experts on the latest in cybersecurity and AI.</p>
-            <div class="card-button">Coming Soon</div>
-          </div>
-        </div>
-      </div>
-    </section>
-  
-    <footer>
-      <div>
-        <h4>About Us</h4>
-        <p>Allsafeafrica is committed to advancing cybersecurity awareness and skills across Africa through training, innovation, and community support.</p>
-      </div>
-      <div>
-        <h4>Contact Us</h4>
-        <a href="mailto:allsafeafrica@gmail.com">allsafeafrica@gmail.com</a>
-        <a href="#">Kampala, Uganda</a>
-      </div>
-      <div>
-        <h4>Social Links</h4>
-        <a href="https://g.co/kgs/UX577kU">Google</a>
-        <a href="https://www.linkedin.com/company/allsafeafrica/">LinkedIn</a>
-        <a href="https://github.com/Allsafeafrica">GitHub</a>
-        <a href="https://chat.whatsapp.com/GcYCogAEnVZA7n6ilHVZ1A">Join Our WhatsApp Community</a>
-
-      </div>
-      <div>
-        <h4>Trainings</h4>
-        <a href="#">Linux Security Essentials</a>
-        <a href="#">Cybersecurity Basics</a>
-        <a href="#">Kali Linux Projects</a>
-        <a href="#" class="card-button" style="margin-top: 10px; display: inline-block; width: auto;">Explore More</a>
-      </div>
-    
-        <p>&copy; 2025 GreenGuard by Allsafeafrica. All rights reserved.</p>
-
-    </footer>
-  
-    <script>
-      const popupOverlay = document.getElementById('popupForm');
-      const popupContent = document.getElementById('popupContent');
-    
-      function openPopup() {
-        popupOverlay.classList.remove('hide');
-        popupOverlay.classList.add('show');
-        popupOverlay.style.display = 'flex';
-      }
-    
-      function closePopupAndRefresh() {
-        popupOverlay.classList.remove('show');
-        popupOverlay.classList.add('hide');
-    
-        // Wait for animation to finish, then refresh
-        setTimeout(() => {
-          location.reload(); // Auto-refresh the page
-        }, 300);
-      }
-    
-      // Close the popup and refresh if clicking outside of it
-      window.addEventListener('click', function(event) {
-        if (event.target === popupOverlay) {
-          closePopupAndRefresh();
-        }
-      });
-    </script>
-    
-  </body>
-  </html>
-  <script>
-    const slider = document.getElementById('courseSlider');
-    const scrollAmount = 900; // Scroll 3 cards per click
-    let autoSlideInterval;
-
-    function scrollSlider(direction) {
-      slider.scrollBy({
-        left: direction * scrollAmount,
-        behavior: 'smooth'
-      });
-    }
-
-    function startAutoSlide() {
-      autoSlideInterval = setInterval(() => {
-        if (slider.scrollLeft + slider.offsetWidth >= slider.scrollWidth - 10) {
-          slider.scrollTo({ left: 0, behavior: 'smooth' });
-        } else {
-          scrollSlider(1);
-        }
-      }, 1000); // Auto slide every 4 seconds
-    }
-
-    function resetAutoSlide() {
-      clearInterval(autoSlideInterval);
-      startAutoSlide();
-    }
-
-    slider.addEventListener('scroll', resetAutoSlide);
-    startAutoSlide();
-  </script>
-</body>
-</html>
+        justify-content: space-around;        text-align: left;      }        footer div {        margin: 10px;        flex: 1;        min-width: 200px;      }        footer h4 {        margin-bottom: 10px;        color: #fff;      }        footer a {        display: block;        color: #aaff00;        text-decoration: none;        margin-bottom: 6px;      }        footer a:hover {        text-decoration: underline;      }        @media (max-width: 8px) {        .card, .event-card {          width: 80%;        }        .nav-button {          display: none;        }        footer {          flex-direction: column;          text-align: center;        }      }    </style>  </head>  <body>    <section class="event-section">      <h2>Upcoming Events</h2>      <div class="event-cards">        <div class="event-card">          <div class="card-image" style="background-image: url('images/wkshp.jpeg');"></div>          <div class="card-content">            <h3>Secure Coding Workshop</h3>            <p>Learn how to write secure code and avoid vulnerabilities in real-time projects.</p>            <div class="card-button">              <a href="https://lu.ma/securecoding" target="_blank" style="text-decoration: none; color: inherit;">Join Now</a>            </div>          </div>        </div>        <div class="event-card">          <div class="card-image" style="background-image: url('images/CTF.jpg');"></div>          <div class="card-content">            <h3>CTF Challenge</h3>            <p>Compete in our Capture The Flag event to test your hacking and defense skills!</p>            <div class="card-button">Coming Soon</div>          </div>        </div>        <div class="event-card">          <div class="card-image" style="background-image: url('images/host.jpg');"></div>          <div class="card-content">            <h3>Cyber Talks & Panels</h3>            <p>Join discussions with industry experts on the latest in cybersecurity and AI.</p>            <div class="card-button">Coming Soon</div>          </div>        </div>      </div>    </section>      <footer>      <div>        <h4>About Us</h4>        <p>Allsafeafrica is committed to advancing cybersecurity awareness and skills across Africa through training, innovation, and community support.</p>      </div>      <div>        <h4>Contact Us</h4>        <a href="mailto:allsafeafrica@gmail.com">allsafeafrica@gmail.com</a>        <a href="#">Kampala, Uganda</a>      </div>      <div>        <h4>Social Links</h4>        <a href="https://g.co/kgs/UX577kU">Google</a>        <a href="https://www.linkedin.com/company/allsafeafrica/">LinkedIn</a>        <a href="https://github.com/Allsafeafrica">GitHub</a>        <a href="https://chat.whatsapp.com/GcYCogAEnVZA7n6ilHVZ1A">Join Our WhatsApp Community</a>      </div>      <div>        <h4>Trainings</h4>        <a href="#">Linux Security Essentials</a>        <a href="#">Cybersecurity Basics</a>        <a href="#">Kali Linux Projects</a>        <a href="#" class="card-button" style="margin-top: 10px; display: inline-block; width: auto;">Explore More</a>      </div>      <p>&copy; 2025 GreenGuard by Allsafeafrica. All rights reserved.</p>    </footer>      <script>      const slider = document.getElementById('courseSlider');      const scrollAmount = 320;      let autoSlideInterval;        function scrollSlider(direction) {        slider.scrollBy({          left: direction * scrollAmount,          behavior: 'smooth'        });      }        function startAutoSlide() {        autoSlideInterval = setInterval(() => {          if (slider.scrollLeft + slider.offsetWidth >= slider.scrollWidth) {            slider.scrollTo({ left: 0, behavior: 'smooth' });          } else {            scrollSlider(1);          }        }, 3000);      }        function resetAutoSlide() {        clearInterval(autoSlideInterval);        startAutoSlide();      }        if (slider) {        slider.addEventListener('scroll', resetAutoSlide);        startAutoSlide();          window.addEventListener('load', () => {          scrollSlider(1);        });      }    </script>  </body>  </html>  <script>    const scrollAmount = 900; // Scroll 3 cards per click    let autoSlideInterval;    function scrollSlider(direction) {      const slider = document.getElementById('courseSlider');      slider.scrollBy({        left: direction * scrollAmount,        behavior: 'smooth'      });    }    function startAutoSlide() {      const slider = document.getElementById('courseSlider');      autoSlideInterval = setInterval(() => {        if (slider.scrollLeft + slider.offsetWidth >= slider.scrollWidth - 10) {          slider.scrollTo({ left: 0, behavior: 'smooth' });        } else {          scrollSlider(1);        }      }, 1000); // Auto slide every 4 seconds    }    function resetAutoSlide() {      clearInterval(autoSlideInterval);      startAutoSlide();    }    const slider = document.getElementById('courseSlider');    slider.addEventListener('scroll', resetAutoSlide);    startAutoSlide();  </script> </section></body></html>
